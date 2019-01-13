@@ -1,12 +1,15 @@
 # Xiropht-Wallet-Gui-Language-List
 The official list of language file used by Xiropht Wallet Gui
 
-Thank you to our contributors of language files:
+**Thank to our contributors of language files:**
 
-English: Xiropht, DigitalTwister, AlpHA
-Français: Xiropht
-Greek: AlpHA
-Magyar: Maxy86
+- English: Xiropht, DigitalTwister, AlpHA
+
+- Français: Xiropht
+
+- Greek: AlpHA
+
+- Magyar: Maxy86
 
 Everybody can contribute by fix them or by including a new language file, when you have done that, you can contact me for include your fix or include your language file here. 
 
