@@ -1,0 +1,318 @@
+##############################################################
+#########>> CHARACTER HELP: << ###############################
+#########>> \n for make a new line << ########################
+#########>> %CoinMinName call the min name of the coin << ####
+#########>> %CoinName  the name of the coin << ###############
+#########>> %AmountSend amount coin to send << ###############
+#########>> %TargetWallet target wallet     << ###############
+#########>> %Date insert a date 			<< ###############
+##############################################################
+#
+# WARNING: LANGUAGE_NAME need to be at the first position. 
+LANGUAGE_NAME=English
+CONTRIBUTOR=Xiropht, DigitalTwister, AlpHA
+#
+######## START MAIN INTERFACE ########
+#
+## Menu File
+MENU_FILE_TEXT=File
+MENU_FILE_MAIN_MENU_TEXT=Main Menu
+MENU_FILE_CREATE_WALLET_MENU_TEXT=Create Wallet
+MENU_FILE_OPEN_WALLET_MENU_TEXT=Open Wallet
+MENU_FILE_FUNCTION_CLOSE_WALLET_TEXT=Close Wallet
+MENU_FILE_RESTORE_WALLET_MENU_TEXT=Restore a Wallet
+MENU_FILE_FUNCTION_EXIT_TEXT=Exit
+#
+## Menu Language
+MENU_LANGUAGE_TEXT=Language
+#
+## Menu Setting
+MENU_SETTING_TEXT=Settings
+MENU_SETTING_SECURITY_TEXT=Security
+#
+## SubMenu Security
+SUBMENU_SETTING_SECURITY_CONFIG_CHANGE_PASSWORD_TEXT=Change Wallet Password
+SUBMENU_SETTING_SECURITY_CONFIG_PIN_CODE_TEXT=Set PIN Code State
+#
+## Menu Sync
+MENU_SETTING_SYNC_TEXT=Sync
+#
+## SubMenu Sync
+SUBMENU_SETTING_SYNC_REMOTE_NODE_CONFIG_TEXT=Remote Node Settings
+SUBMENU_SETTING_RESYNC_TRANSACTION_TEXT=Resync Transactions
+SUBMENU_SETTING_RESYNC_BLOCK_TEXT=Resync Blocks
+RESYNC_TRANSACTION_HISTORY_TITLE_TEXT=Resync Transaction History
+RESYNC_TRANSACTION_HISTORY_CONTENT_TEXT=Do you really want to resynchronize your transaction history?
+RESYNC_BLOCK_EXPLORER_TITLE_TEXT=Resync Block Explorer
+RESYNC_BLOCK_EXPLORER_CONTENT_TEXT=Do you really want to resynchronize your block explorer?
+#
+## Menu Help
+SUBMENU_HELP_TEXT=Help
+SUBMENU_HELP_ABOUT_TEXT=About
+#
+## Panel Wallet Information
+PANEL_WALLET_BALANCE_TEXT=Balance:
+PANEL_WALLET_ADDRESS_TEXT=Wallet Address:
+PANEL_WALLET_TOTAL_PENDING_TRANSACTION_ON_RECEIVE_TEXT=Pending Transactions To Be Received:
+#
+## Button Wallet Menu
+BUTTON_WALLET_OVERVIEW_TEXT=Overview
+BUTTON_WALLET_SEND_TRANSACTION_TEXT=Send %CoinMinName
+BUTTON_WALLET_TRANSACTION_HISTORY_TEXT=Transaction History
+BUTTON_WALLET_BLOCK_EXPLORER_TEXT=Block Explorer
+BUTTON_WALLET_MINING_TEXT=Mining
+#
+######## END MAIN INTERFACE ########
+#
+#
+######## START BLOCK EXPLORER MENU ########
+#
+GRID_BLOCK_EXPLORER_COLUMN_ID_TEXT=ID
+GRID_BLOCK_EXPLORER_COLUMN_HASH_TEXT=Hash
+GRID_BLOCK_EXPLORER_COLUMN_REWARD_TEXT=Reward
+GRID_BLOCK_EXPLORER_COLUMN_DIFFICULTY_TEXT=Difficulty
+GRID_BLOCK_EXPLORER_COLUMN_DATE_CREATE_TEXT=Date Created
+GRID_BLOCK_EXPLORER_COLUMN_DATE_FOUND_TEXT=Date Found
+GRID_BLOCK_EXPLORER_COLUMN_TRANSACTION_HASH_TEXT=Transaction Hash
+#
+######## END BLOCK EXPLORER MENU ########
+#
+#
+######## START CREATE WALLET MENU ########
+#
+CREATE_WALLET_LABEL_TITLE_TEXT=Create a wallet:
+CREATE_WALLET_LABEL_PASSWORD_REQUIREMENT_TEXT=Password must be a least 8 characters long and contain letters, numbers, and special characters.
+CREATE_WALLET_LABEL_SELECT_WALLET_FILE_TEXT=Select directory for your new wallet to be saved in:
+CREATE_WALLET_LABEL_INPUT_WALLET_PASSWORD_TEXT=Type a wallet password:
+CREATE_WALLET_BUTTON_SUBMIT_CREATE_TEXT=Create Wallet
+CREATE_WALLET_ERROR_CANT_CONNECT_MESSAGE_CONTENT_TEXT=Error: Cannot connect to network in order to create wallet, please try again later.
+
+#
+######## END CREATE WALLET MENU ########
+#
+#
+######## START MAIN WALLET MENU ########
+#
+MAIN_WALLET_LABEL_WELCOME_INFORMATION_TEXT=Welcome to %CoinName Wallet\nOpen a wallet or create a new one to start sending/receiving %CoinMinName:
+MAIN_WALLET_LABEL_HELP_INFORMATION_TEXT=You can change the wallet's language if necessary. \nFor any issues contact the Team on Discord.
+MAIN_WALLET_BUTTON_OPEN_WALLET_MENU_TEXT=Open Wallet
+MAIN_WALLET_BUTTON_CREATE_WALLET_MENU_TEXT=Create Wallet
+#
+######## END MAIN WALLET MENU ########
+#
+#
+######## START OPEN WALLET MENU ########
+#
+OPEN_WALLET_LABEL_TITLE_TEXT=Open a wallet:
+OPEN_WALLET_LABEL_FILE_SELECTED_TEXT=Wallet File Selected:
+OPEN_WALLET_LABEL_YOUR_PASSWORD_TEXT=Type Wallet Password:
+OPEN_WALLET_BUTTON_SEARCH_WALLET_FILE_TEXT=Browse
+OPEN_WALLET_BUTTON_SUBMIT_WALLET_FILE_TEXT=OK
+OPEN_WALLET_ERROR_MESSAGE_NO_PASSWORD_WRITTED_TITLE_TEXT=Type a password please
+OPEN_WALLET_ERROR_MESSAGE_NO_PASSWORD_WRITTED_CONTENT_TEXT=You should type the password of your wallet.
+OPEN_WALLET_ERROR_MESSAGE_WRONG_PASSWORD_WRITTED_TITLE_TEXT=Cannot open your wallet file.
+OPEN_WALLET_ERROR_MESSAGE_WRONG_PASSWORD_WRITTED_CONTENT_TEXT=Error: Your wallet file is corrupted, you should use your private key to restore it.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_TITLE_TEXT=Network Error.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_CONTENT_TEXT=Cannot connect to the network, please try again later.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_WRONG_PASSWORD_WRITTED_TITLE_TEXT=Cannot open your wallet file.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_WRONG_PASSWORD_WRITTED_CONTENT_TEXT=Cannot connect to the network, wallet password is wrong or your wallet file is corrupted.
+#
+######## END OPEN WALLET MENU ########
+#
+#
+######## START OVERVIEW WALLET MENU ########
+OVERVIEW_WALLET_LABEL_TITLE_TEXT=Network Stats
+OVERVIEW_WALLET_LABEL_COIN_MAX_SUPPLY_TEXT=Coin Maximum Supply:
+OVERVIEW_WALLET_LABEL_COIN_CIRCULATING_TEXT=Coins Circulating:
+OVERVIEW_WALLET_LABEL_TRANSACTION_FEE_ACCUMULATED_TEXT=Transaction Fee(s) Accumulated:
+OVERVIEW_WALLET_LABEL_TOTAL_COIN_MINED_TEXT=Total Coins Mined:
+OVERVIEW_WALLET_LABEL_BLOCKCHAIN_HEIGHT_TEXT=Blockchain Height:
+OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_MINED_TEXT=Total Blocks Mined:
+OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_LEFT_TEXT=Total Blocks Left:
+OVERVIEW_WALLET_LABEL_NETWORK_DIFFICULTY_TEXT=Network Difficulty:
+OVERVIEW_WALLET_LABEL_NETWORK_HASHRATE_TEXT=Network Hashrate:
+OVERVIEW_WALLET_LABEL_LAST_BLOCK_FOUND_TEXT=Last Block Found Date:
+OVERVIEW_WALLET_BUTTON_TOOLTIP_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=This is the total amount of coins accumulated from transaction fees. This amount is used for creating new blocks once the Coin Maximum Supply is reached. This amount is also used for paying public remote nodes successfully listed on the network.
+OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_TITLE_TEXT=Transaction Fees Accumulated Information
+OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=This is the total amount of coins accumulated from transaction fees. This amount is used for creating new blocks once the Coin Maximum Supply is reached. This amount is also used for paying public remote nodes successfully listed on the network.
+#
+######## END OVERVIEW WALLET MENU ########
+#
+#
+######## START SEND TRANSACTION WALLET MENU ########
+SEND_TRANSACTION_WALLET_LABEL_TITLE_TEXT=Send %CoinMinName:
+SEND_TRANSACTION_WALLET_LABEL_WALLET_ADDRESS_TARGET_TEXT=Recipient Wallet Address:
+SEND_TRANSACTION_WALLET_LABEL_AMOUNT_TEXT=Amount to be sent:
+SEND_TRANSACTION_WALLET_LABEL_FEE_TEXT=Fees:
+SEND_TRANSACTION_WALLET_LABEL_ESTIMATED_RECEIVE_TIME_TEXT=Estimated Transaction Time:
+SEND_TRANSACTION_WALLET_CHECKBOX_OPTION_ANONYMITY_TEXT=Hide your wallet address (make it invisible to the recipient).
+SEND_TRANSACTION_WALLET_BUTTON_SUBMIT_TRANSACTION_TEXT=SEND
+SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_TITLE_TEXT=Confirm Anonymous Option
+SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_CONTENT1_TEXT=Once you send your %CoinMinName, the blockchain will increase the fees by 0,01 %CoinMinName, do you really want to use this option? [this extra fee will be given to the Developers/Testers Team]
+SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_TITLE_TEXT=Transaction Fees Information
+SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_CONTENT_TEXT=The minimum fee is 0.001 %CoinMinName
+SEND_TRANSACTION_WALLET_TOOLTIP_FEE_INFORMATION_CONTENT_TEXT=The minimum fee is 0.001 %CoinMinName
+SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_TITLE_TEXT=Estimated time for transaction to be processed.
+SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_CONTENT_TEXT=Transaction procession time is estimated by calculating the total number of pending transactions on the network. Remember, if the recipient has multiple transactions pending to be received, that will also increase the time needed to receive your %CoinMinName (1 second per pending transaction).
+SEND_TRANSACTION_WALLET_MESSAGE_SUBMIT_TITLE_TEXT=Confirm Sending %CoinMinName
+SEND_TRANSACTION_WALLET_MESSAGE_SUBMIT_CONTENT_TEXT=Do you really want to send an amount of : %AmountSend %CoinMinName to the address: %TargetWallet.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_FEE_CONTENT_TEXT=Error on fee amount input.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_AMOUNT_CONTENT_TEXT=Error on amount input.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_TARGET_CONTENT_TEXT=Error on recipient wallet address input.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_CONNECTION_TITLE_TEXT=Connection Error
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_CONNECTION_CONTENT_TEXT=Connection error, cannot submit your transaction request to the network.
+
+SEND_TRANSACTION_WALLET_TIME_SECOND_TEXT=second(s).
+SEND_TRANSACTION_WALLET_TIME_MINUTE_TEXT=minute(s).
+SEND_TRANSACTION_WALLET_TIME_HOUR_TEXT=hour(s).
+SEND_TRANSACTION_WALLET_TIME_DAY_TEXT=day(s).
+######## END SEND TRANSACTION WALLET MENU ########
+#
+#
+######## START TRANSACTION HISTORY WALLET MENU ########
+TRANSACTION_HISTORY_WALLET_COLUMN_ID=ID
+TRANSACTION_HISTORY_WALLET_COLUMN_DATE=Date
+TRANSACTION_HISTORY_WALLET_COLUMN_TYPE=Type
+TRANSACTION_HISTORY_WALLET_COLUMN_HASH=Hash
+TRANSACTION_HISTORY_WALLET_COLUMN_AMOUNT=Amount
+TRANSACTION_HISTORY_WALLET_COLUMN_FEE=Fees
+TRANSACTION_HISTORY_WALLET_COLUMN_ADDRESS=Address
+TRANSACTION_HISTORY_WALLET_COLUMN_DATE_RECEIVED=Date Sent/Received
+TRANSACTION_HISTORY_WALLET_COLUMN_BLOCK_HEIGHT_SRC=Source Block Height
+TRANSACTION_HISTORY_WALLET_WAITING_MESSAGE_SYNC_TEXT=Please wait a moment, transaction history is syncing.
+TRANSACTION_HISTORY_WALLET_COPY_TEXT=Copied.
+TRANSACTION_HISTORY_WALLET_TAB_NORMAL_SEND_TRANSACTION_LIST_TEXT=Sent Transactions
+TRANSACTION_HISTORY_WALLET_TAB_ANONYMOUS_SEND_TRANSACTION_LIST_TEXT=Anonymously Sent Transactions
+TRANSACTION_HISTORY_WALLET_TAB_NORMAL_RECEIVED_TRANSACTION_LIST_TEXT=Received Transactions
+TRANSACTION_HISTORY_WALLET_TAB_ANONYMOUS_RECEIVE_TRANSACTION_LIST_TEXT=Anonymously Received Transactions
+TRANSACTION_HISTORY_WALLET_TAB_BLOCK_REWARD_RECEIVED_LIST_TEXT=Block Reward
+######## END TRANSACTION HISTORY WALLET MENU ########
+#
+#
+######## START RESTORE WALLET MENU ########
+#
+#
+RESTORE_WALLET_LABEL_TITLE_TEXT=Restore a wallet:
+RESTORE_WALLET_LABEL_SELECT_PATH_FILE_TEXT=Select directory for your restored your wallet to be saved in:
+RESTORE_WALLET_LABEL_PRIVATE_KEY_TEXT=Type your Private Key:
+RESTORE_WALLET_LABEL_PASSWORD_TEXT=Type a new wallet password:
+RESTORE_WALLET_BUTTON_SUBMIT_RESTORE_TEXT=Restore
+######## END RESTORE WALLET MENU #########
+#
+#
+######## START CHANGE PASSWORD WALLET MENU ########
+CHANGE_PASSWORD_WALLET_LABEL_OLD_PASSWORD_TEXT=Type the current password:
+CHANGE_PASSWORD_WALLET_LABEL_PIN_CODE_TEXT=Type your PIN code:
+CHANGE_PASSWORD_WALLET_LABEL_NEW_PASSWORD_TEXT=Type a new password:
+######## END CHANGE PASSWORD WALLET MENU ########
+#
+#
+######## START CREATE WALLET SUBMENU ########
+CREATE_WALLET_SUBMENU_LABEL_INFORMATION_TEXT=Your wallet has been successfully created, please keep your private key and your PIN Code somewhere safe\nin case you lose your wallet file. If you lose your Private Key, you cannot retrieve your wallet file in case of loss.\nIf you lose your Public Key, you cannot use your wallet address and password to retrieve data information\nof your wallet. If you lose your PIN Code, you cannot get access to your wallet.\nWe take no responsibility in case you lose them, you are fully responsible.
+CREATE_WALLET_SUBMENU_LABEL_PUBLIC_KEY_TEXT=Your Public Wallet Key:
+CREATE_WALLET_SUBMENU_LABEL_PRIVATE_KEY_TEXT=Your Private Wallet Key:
+CREATE_WALLET_SUBMENU_LABEL_PIN_CODE_TEXT=Your PIN Code:
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_TEXT=Copy Wallet Information
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_TEXT=I do have secured my wallet information before proceeding.
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_TITLE_TEXT=Are you sure?
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_CONTENT_TEXT=Make sure you have saved your wallet information. It CANNOT be recovered once you close this window.
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_TITLE_TEXT=Wallet Information Copied
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_CONTENT_TEXT=Your wallet information has been copied, please do not forget to keep this info somewhere safely.
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_SAFE_CONTENT_TEXT=Be safe, secure your wallet information just in case.
+######## END CREATE WALLET SUBMENU ########
+#
+#
+######## START PIN CODE SETTING STATUS MENU ########
+PIN_CODE_SETTING_MENU_LABEL_STATUS_INFORMATION_TEXT=PIN Code State: 
+PIN_CODE_SETTING_MENU_LABEL_STATUS_ENABLED_TEXT=Enabled
+PIN_CODE_SETTING_MENU_BUTTON_STATUS_ENABLE_TEXT=Enabled
+PIN_CODE_SETTING_MENU_LABEL_STATUS_DISABLED_TEXT=Disabled
+PIN_CODE_SETTING_MENU_BUTTON_STATUS_DISABLE_TEXT=Disable
+PIN_CODE_SETTING_MENU_LABEL_INFORMATION_TEXT=Remember, these settings are only for this wallet, each wallet's settings are independent.
+PIN_CODE_SETTING_MENU_LABEL_WRITE_PASSWORD_TEXT=Type your password:
+PIN_CODE_SETTING_MENU_LABEL_WRITE_PIN_CODE_TEXT=Type your PIN Code:
+PIN_CODE_SETTING_MENU_BUTTON_SUBMIT_CHANGE_TEXT=Submit
+######## END PIN CODE SETTING STATUS MENU ########
+#
+#
+######## START PIN CODE SUBMIT MENU ########
+PIN_CODE_SUBMIT_MENU_LABEL_INFORMATION_TEXT=The blockchain asks for your PIN Code.\nPlease type it to proceed using your wallet:
+PIN_CODE_SUBMIT_MENU_WARNING_TEXT=Please type your PIN Code.
+PIN_CODE_SUBMIT_MENU_NETWORK_ERROR_TEXT=Cannot submit your PIN, wallet has been disconnected.
+######## END PIN CODE SUBMIT MENU ########
+#
+#
+######## START REMOTE NODE SETTING MENU ########
+REMOTE_NODE_SETTING_MENU_USE_SEED_NODE_NETWORK_ONLY_TEXT=Use only seed node to sync your wallet [Recommended].
+REMOTE_NODE_SETTING_MENU_USE_REMOTE_NODE_TEXT=Use public remote nodes list to sync your wallet.
+REMOTE_NODE_SETTING_MENU_USE_REMOTE_NODE_INFORMATION_TEXT=The list of public remote nodes is provided by the seed node.\nIf no public remote nodes are available, the seed node mode will be chosen automatically.
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_TEXT=Manually sync by using a remote node host [Not Recommended].
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_INFORMATION_TEXT=If you choose to use this option, we recommend you to use your private remote node ONLY.
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_HOSTNAME_TEXT=Hostname / IP:
+REMOTE_NODE_SETTING_MENU_SAVE_SETTING_TEXT=Your sync settings have been saved. Please reopen your wallet.
+######## END REMOTE NODE SETTING MENU ########
+#
+#
+####### START WAITING MENU #######
+WAITING_MENU_LABEL_TEXT=Please wait a moment.
+######## END WAITING MENU ########
+#
+#
+####### START NETWORK WAITING MENU #######
+NETWORK_WAITING_MENU_LABEL_TEXT=Connection has been lost, trying to reconnect your wallet.
+######## END NETWORK WAITING MENU ########
+#
+#
+####### START WAITING CREATE WALLET MENU #######
+WAITING_CREATE_WALLET_MENU_LABEL_TEXT=Your Wallet's creation is pending.\nPlease wait a moment.
+######## END NETWORK WAITING MENU ########
+#
+#
+#################### END GRAPHIC PART #######################
+############# START TRANSLATION NETWORK TEXT ################
+WALLET_NETWORK_OBJECT_TRANSACTION_CACHE_ERROR_TEXT=Cannot read your wallet's transaction cache, wallet will resync your transaction history.
+WALLET_NETWORK_OBJECT_ANONYMITY_TRANSACTION_CACHE_ERROR_TEXT=Cannot read your wallet's anonymous transaction cache, wallet will resync your anonymous transaction history.
+WALLET_NETWORK_OBJECT_BLOCK_CACHE_READ_SUCCESS_TEXT=Wallet block cache has been loaded successfully.
+WALLET_NETWORK_OBJECT_DISCONNECTED_TEXT=Not Connected.
+WALLET_NETWORK_OBJECT_CANNOT_CONNECT_WALLET_CONTENT_TEXT=Cannot reconnect your wallet to the network, please check your internet connection.
+WALLET_NETWORK_OBJECT_CANNOT_CONNECT_WALLET_TITLE_TEXT=Network Error
+WALLET_NETWORK_OBJECT_SUCCESS_CONNECT_WALLET_CONTENT_TEXT=Your wallet has been successfully reconnected to the network.
+WALLET_NETWORK_OBJECT_SUCCESS_CONNECT_WALLET_TITLE_TEXT=Connection Successful
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR1_CONTENT_TEXT=Wallet password needs to contain more characters (minimum: 8).
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR1_TITLE_TEXT=Password does not contain enough characters.
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR2_CONTENT_TEXT=Wallet password needs to contain letters, numbers and special characters.
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR2_TITLE_TEXT=Password is not strong enough.
+WALLET_NETWORK_OBJECT_PIN_CODE_ACCEPTED_CONTENT_TEXT=PIN Code accepted, the blockchain will ask for your PIN Code once every 15 minutes.
+WALLET_NETWORK_OBJECT_PIN_CODE_ACCEPTED_TITLE_TEXT=PIN Code Accepted
+WALLET_NETWORK_OBJECT_PIN_CODE_REFUSED_CONTENT_TEXT=Wrong PIN Code, please try again. After 5 failed attempts, wallet will be banned for 1 hour.
+WALLET_NETWORK_OBJECT_PIN_CODE_REFUSED_TITLE_TEXT=Wrong PIN Code
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_INVALID_AMOUNT_CONTENT_TEXT=Transaction refused. You have input an invalid amount.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_INVALID_AMOUNT_TITLE_TEXT=Transaction Refused
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_AMOUNT_CONTENT_TEXT=Transaction refused. Input amount is insufficient.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_AMOUNT_TITLE_TEXT=Transaction Refused
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_FEE_CONTENT_TEXT=Transaction refused. Input fee is insufficient.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_FEE_TITLE_TEXT=Transaction Refused
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_CONTENT_TEXT=Busy sending a transaction, the blockchain is currently checking the health of your balance, please wait a moment to send another transaction or try to reconnect if this status persists.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_TITLE_TEXT=Checking Balance Health
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_RECEIVE_CONTENT_TEXT=Busy receiving a transaction, please wait before sending a transaction until: %Date
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_RECEIVE_TITLE_TEXT=Busy With a Transaction
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ACCEPTED_CONTENT_TEXT=Transaction has been accepted on the blockchain side, your history will be updated as soon as possible by a public remote node or manually from the node have selected in manual node settings.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ACCEPTED_TITLE_TEXT=Transaction Accepted
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ADDRESS_NOT_VALID_CONTENT_TEXT=Wallet address not valid, please correct it.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ADDRESS_NOT_VALID_TITLE_TEXT=Wallet Address Invalid
+WALLET_NETWORK_OBJECT_BANNED_CONTENT_TEXT=Your wallet has been banned for approximatively one hour, please try reconnecting later.
+WALLET_NETWORK_OBJECT_BANNED_TITLE_TEXT=Wallet Banned
+WALLET_NETWORK_OBJECT_ALREADY_CONNECTED_CONTENT_TEXT=Your wallet has already been connected, please try reconnecting later.
+WALLET_NETWORK_OBJECT_ALREADY_CONNECTED_TITLE_TEXT=Wallet Already Connected
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_ACCEPTED_CONTENT_TEXT=Wallet password has been changed successfully.
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_ACCEPTED_TITLE_TEXT=Password Changed successfully
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_REFUSED_CONTENT_TEXT=Wallet password has not been changed, please check password and PIN Code.
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_REFUSED_TITLE_TEXT=Password Not Changed
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_ACCEPTED_CONTENT_TEXT=Wallet PIN Status has been changed successfully.
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_ACCEPTED_TITLE_TEXT=PIN Status Changed
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_REFUSED_CONTENT_TEXT=Wallet PIN Status has not been changed, please check password and PIN Code.
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_REFUSED_TITLE_TEXT=PIN Status Not Changed
+WALLET_NETWORK_OBJECT_WARNING_WALLET_CONNECTION_CONTENT_TEXT=Warning, the blockchain has detected an attempt to connect to wallet, if it is not you, we suggest that you change your password as soon as possible.
+WALLET_NETWORK_OBJECT_WARNING_WALLET_CONNECTION_TITLE_TEXT=Network Warning
+WALLET_NETWORK_OBJECT_CANNOT_SEND_PACKET_TEXT=Cannot send packet to the network, your wallet has been disconnected.
+############# END TRANSLATION NETWORK TEXT ################

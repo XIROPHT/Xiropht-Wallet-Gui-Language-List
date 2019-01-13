@@ -1,0 +1,318 @@
+##############################################################
+#########>> CHARACTER HELP: << ###############################
+#########>> \n for make a new line << ########################
+#########>> %CoinMinName call the min name of the coin << ####
+#########>> %CoinName  the name of the coin << ###############
+#########>> %AmountSend amount coin to send << ###############
+#########>> %TargetWallet target wallet     << ###############
+#########>> %Date insert a date 			<< ###############
+##############################################################
+#
+# WARNING: LANGUAGE_NAME need to be at the first position. 
+LANGUAGE_NAME=Français
+CONTRIBUTOR=Xiropht
+#
+######## START MAIN INTERFACE ########
+#
+## Menu File
+MENU_FILE_TEXT=Fichier
+MENU_FILE_MAIN_MENU_TEXT=Accueil
+MENU_FILE_CREATE_WALLET_MENU_TEXT=Créer un Portefeuille
+MENU_FILE_OPEN_WALLET_MENU_TEXT=Ouvrir un Portefeuille
+MENU_FILE_FUNCTION_CLOSE_WALLET_TEXT=Fermer un Portefeuille
+MENU_FILE_RESTORE_WALLET_MENU_TEXT=Restaurer un Portefeuille
+MENU_FILE_FUNCTION_EXIT_TEXT=Quitter
+#
+## Menu Language
+MENU_LANGUAGE_TEXT=Langue
+#
+## Menu Setting
+MENU_SETTING_TEXT=Paramètre
+MENU_SETTING_SECURITY_TEXT=Sécurité
+#
+## SubMenu Security
+SUBMENU_SETTING_SECURITY_CONFIG_CHANGE_PASSWORD_TEXT=Modifier mot de passe
+SUBMENU_SETTING_SECURITY_CONFIG_PIN_CODE_TEXT=Paramètre code pin
+#
+## Menu Sync
+MENU_SETTING_SYNC_TEXT=Synchronisation
+#
+## SubMenu Sync
+SUBMENU_SETTING_SYNC_REMOTE_NODE_CONFIG_TEXT=Paramètre Remote Node
+SUBMENU_SETTING_RESYNC_TRANSACTION_TEXT=Resynchroniser Transaction
+SUBMENU_SETTING_RESYNC_BLOCK_TEXT=Resynchroniser L'explorateur de bloc
+RESYNC_TRANSACTION_HISTORY_TITLE_TEXT=Re-synchroniser l'historique de transaction
+RESYNC_TRANSACTION_HISTORY_CONTENT_TEXT=Voulez vous vraiment resynchroniser votre historique de transaction?
+RESYNC_BLOCK_EXPLORER_TITLE_TEXT=Re-synchroniser l'explorateur de blocs
+RESYNC_BLOCK_EXPLORER_CONTENT_TEXT=Voulez vous vraiment resynchroniser votre explorateur de blocs?
+#
+## Menu Help
+SUBMENU_HELP_TEXT=Aide
+SUBMENU_HELP_ABOUT_TEXT=A propos
+#
+## Panel Wallet Information
+PANEL_WALLET_BALANCE_TEXT=Balance:
+PANEL_WALLET_ADDRESS_TEXT=Addresse Portefeuille:
+PANEL_WALLET_TOTAL_PENDING_TRANSACTION_ON_RECEIVE_TEXT=Total transaction en attente:
+#
+## Button Wallet Menu
+BUTTON_WALLET_OVERVIEW_TEXT=Vue d'ensemble
+BUTTON_WALLET_SEND_TRANSACTION_TEXT=Envoyer une transaction
+BUTTON_WALLET_TRANSACTION_HISTORY_TEXT=Historique de transaction
+BUTTON_WALLET_BLOCK_EXPLORER_TEXT=Explorateur de Bloc
+BUTTON_WALLET_MINING_TEXT=Mining
+#
+######## END MAIN INTERFACE ########
+#
+#
+######## START BLOCK EXPLORER MENU ########
+#
+GRID_BLOCK_EXPLORER_COLUMN_ID_TEXT=ID
+GRID_BLOCK_EXPLORER_COLUMN_HASH_TEXT=Hash
+GRID_BLOCK_EXPLORER_COLUMN_REWARD_TEXT=Récompense
+GRID_BLOCK_EXPLORER_COLUMN_DIFFICULTY_TEXT=Difficulté
+GRID_BLOCK_EXPLORER_COLUMN_DATE_CREATE_TEXT=Date création
+GRID_BLOCK_EXPLORER_COLUMN_DATE_FOUND_TEXT=Date découverte
+GRID_BLOCK_EXPLORER_COLUMN_TRANSACTION_HASH_TEXT=Transaction Hash
+#
+######## END BLOCK EXPLORER MENU ########
+#
+#
+######## START CREATE WALLET MENU ########
+#
+CREATE_WALLET_LABEL_TITLE_TEXT=Créer votre portefeuille:
+CREATE_WALLET_LABEL_PASSWORD_REQUIREMENT_TEXT=Votre mot de passe doit contenir au minimum 8 caractères, un caractère spécial, lettres et chiffres
+CREATE_WALLET_LABEL_SELECT_WALLET_FILE_TEXT=Sélectionner un dossier de destination de votre nouveau portefeuille:
+CREATE_WALLET_LABEL_INPUT_WALLET_PASSWORD_TEXT=Choisissez le mot de passe de votre portefeuille:
+CREATE_WALLET_BUTTON_SUBMIT_CREATE_TEXT=Créer mon portefeuille
+CREATE_WALLET_ERROR_CANT_CONNECT_MESSAGE_CONTENT_TEXT=Erreur, impossible de ce connecter au réseau pour créer votre portefeuille, veuillez réessayer plus tard.
+
+#
+######## END CREATE WALLET MENU ########
+#
+#
+######## START MAIN WALLET MENU ########
+#
+MAIN_WALLET_LABEL_WELCOME_INFORMATION_TEXT=Bienvenue sur votre %CoinName Portefeuille\nOuvrez votre portefeuille ou créer un nouveau pour envoyer/recevoir une transaction:
+MAIN_WALLET_LABEL_HELP_INFORMATION_TEXT=Vous pouvez changer la langue de votre portefeuille si nécessaire.\nPour tout problème contacter l'équipe.
+MAIN_WALLET_BUTTON_OPEN_WALLET_MENU_TEXT=Ouvrir un portefeuille
+MAIN_WALLET_BUTTON_CREATE_WALLET_MENU_TEXT=Créer un portefeuille
+#
+######## END MAIN WALLET MENU ########
+#
+#
+######## START OPEN WALLET MENU ########
+#
+OPEN_WALLET_LABEL_TITLE_TEXT=Ouvrir un portefeuille:
+OPEN_WALLET_LABEL_FILE_SELECTED_TEXT=Fichier sélectionner:
+OPEN_WALLET_LABEL_YOUR_PASSWORD_TEXT=Votre mot de passe:
+OPEN_WALLET_BUTTON_SEARCH_WALLET_FILE_TEXT=Rechercher
+OPEN_WALLET_BUTTON_SUBMIT_WALLET_FILE_TEXT=OK
+OPEN_WALLET_ERROR_MESSAGE_NO_PASSWORD_WRITTED_TITLE_TEXT=Ecrire un mot de passe
+OPEN_WALLET_ERROR_MESSAGE_NO_PASSWORD_WRITTED_CONTENT_TEXT=Vous devez écrire le mot de passe de votre portefeuille.
+OPEN_WALLET_ERROR_MESSAGE_WRONG_PASSWORD_WRITTED_TITLE_TEXT=Impossible d'ouvrir le portefeuille
+OPEN_WALLET_ERROR_MESSAGE_WRONG_PASSWORD_WRITTED_CONTENT_TEXT=Le fichier de votre portefeuille est corrompue ou votre mot de passe est invalide.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_TITLE_TEXT=Erreur réseau
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_CONTENT_TEXT=Impossible de ce connecter au réseau, veuillez réessayer plus tard.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_WRONG_PASSWORD_WRITTED_TITLE_TEXT=Impossible d'ouvrir le portefeuille
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_WRONG_PASSWORD_WRITTED_CONTENT_TEXT=Impossible de ce connecter au réseau, le mot de passe est incorrecte ou votre fichier de portefeuille est corrompue.
+#
+######## END OPEN WALLET MENU ########
+#
+#
+######## START OVERVIEW WALLET MENU ########
+OVERVIEW_WALLET_LABEL_TITLE_TEXT=Statistiques du Réseau
+OVERVIEW_WALLET_LABEL_COIN_MAX_SUPPLY_TEXT=Approvisionnement maximal de pièce:
+OVERVIEW_WALLET_LABEL_COIN_CIRCULATING_TEXT=Pièce en circulation:
+OVERVIEW_WALLET_LABEL_TRANSACTION_FEE_ACCUMULATED_TEXT=Taxe(s) transaction collecté:
+OVERVIEW_WALLET_LABEL_TOTAL_COIN_MINED_TEXT=Total pièce miner:
+OVERVIEW_WALLET_LABEL_BLOCKCHAIN_HEIGHT_TEXT=Blockchain Hauteur:
+OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_MINED_TEXT=Total Bloc miner:
+OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_LEFT_TEXT=Total Bloc restant:
+OVERVIEW_WALLET_LABEL_NETWORK_DIFFICULTY_TEXT=Difficulté Réseau:
+OVERVIEW_WALLET_LABEL_NETWORK_HASHRATE_TEXT=Hashrate Réseau:
+OVERVIEW_WALLET_LABEL_LAST_BLOCK_FOUND_TEXT=Dernier bloc trouvé:
+OVERVIEW_WALLET_BUTTON_TOOLTIP_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=C'est le montant total de pièce accumulé des taxes de transaction. Ce montant sera réinjecter lorsque le total d'approvisionnement de pièce sera épuisé pour créer de nouveau bloc de mining. Ce montant est également utilisé pour payer les gérants de remote node publique.
+OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_TITLE_TEXT=Information sur les taxe de transaction collecté
+OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=C'est le montant total de pièce accumulé des taxes de transaction. Ce montant sera réinjecter lorsque le total d'approvisionnement de pièce sera épuisé pour créer de nouveau bloc de mining. Ce montant est également utilisé pour payer les gérants de remote node publique.
+#
+######## END OVERVIEW WALLET MENU ########
+#
+#
+######## START SEND TRANSACTION WALLET MENU ########
+SEND_TRANSACTION_WALLET_LABEL_TITLE_TEXT=Envoyer une transaction:
+SEND_TRANSACTION_WALLET_LABEL_WALLET_ADDRESS_TARGET_TEXT=Addresse de portefeuille cible:
+SEND_TRANSACTION_WALLET_LABEL_AMOUNT_TEXT=Montant:
+SEND_TRANSACTION_WALLET_LABEL_FEE_TEXT=Taxe:
+SEND_TRANSACTION_WALLET_LABEL_ESTIMATED_RECEIVE_TIME_TEXT=Temps de reception estimé:
+SEND_TRANSACTION_WALLET_CHECKBOX_OPTION_ANONYMITY_TEXT=Option - Cacher son addresse de portefeuille à la cible.
+SEND_TRANSACTION_WALLET_BUTTON_SUBMIT_TRANSACTION_TEXT=Envoyer transaction
+SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_TITLE_TEXT=Confirmer l'option d'anonymat
+SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_CONTENT1_TEXT=Une fois la transaction envoyer, la blockchain va augmenter la taxe de transaction de +0,01 %CoinMinName, voulez vous vraiment utiliser cette option? [Le montant de la taxe de cette option sera envoyé à l'équipe de Développeurs/Testeurs comme étant une donation.]
+SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_TITLE_TEXT=Information taxe de transaction
+SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_CONTENT_TEXT=Le montant minimum de la taxe de transaction est de 0.001 %CoinMinName
+SEND_TRANSACTION_WALLET_TOOLTIP_FEE_INFORMATION_CONTENT_TEXT=Le montant minimum de la taxe de transaction est de 0.001 %CoinMinName
+SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_TITLE_TEXT=Information sur le temps de reception estimé
+SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_CONTENT_TEXT=Le temps de reception estimé est calculé en fonction du nombre de transaction en attente sur le réseau et depuis le montant de taxe de transaction que vous avez choisi. Le temps de reception de la transaction peut varier si votre cible attend plusieurs autres transactions en attente (+1 seconde par transaction en attente du côté de la cible).
+SEND_TRANSACTION_WALLET_MESSAGE_SUBMIT_TITLE_TEXT=Confirmer l'envoi de votre transaction.
+SEND_TRANSACTION_WALLET_MESSAGE_SUBMIT_CONTENT_TEXT=Voulez vous vraiment envoyer un transaction d'un montant de: %AmountSend %CoinMinName sur l'addresse de portefeuille choisi: %TargetWallet.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_FEE_CONTENT_TEXT=Erreur sur le montant de la taxe de transaction.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_AMOUNT_CONTENT_TEXT=Erreur sur le montant de la transaction.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_TARGET_CONTENT_TEXT=EErreur sur l'addresse de portefeuille ciblé.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_CONNECTION_TITLE_TEXT=Erreur de connection
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_CONNECTION_CONTENT_TEXT=Erreur de connection, impossible d'envoyer votre transaction sur le réseau.
+
+SEND_TRANSACTION_WALLET_TIME_SECOND_TEXT=seconde(s).
+SEND_TRANSACTION_WALLET_TIME_MINUTE_TEXT=minute(s).
+SEND_TRANSACTION_WALLET_TIME_HOUR_TEXT=heure(s).
+SEND_TRANSACTION_WALLET_TIME_DAY_TEXT=jour(s).
+######## END SEND TRANSACTION WALLET MENU ########
+#
+#
+######## START TRANSACTION HISTORY WALLET MENU ########
+TRANSACTION_HISTORY_WALLET_COLUMN_ID=ID
+TRANSACTION_HISTORY_WALLET_COLUMN_DATE=Date
+TRANSACTION_HISTORY_WALLET_COLUMN_TYPE=Type
+TRANSACTION_HISTORY_WALLET_COLUMN_HASH=Hash
+TRANSACTION_HISTORY_WALLET_COLUMN_AMOUNT=Montant
+TRANSACTION_HISTORY_WALLET_COLUMN_FEE=Taxe
+TRANSACTION_HISTORY_WALLET_COLUMN_ADDRESS=Addresse
+TRANSACTION_HISTORY_WALLET_COLUMN_DATE_RECEIVED=Date Reçu
+TRANSACTION_HISTORY_WALLET_COLUMN_BLOCK_HEIGHT_SRC=Bloc Hauteur Source
+TRANSACTION_HISTORY_WALLET_WAITING_MESSAGE_SYNC_TEXT=Merci de patienter, votre historique de transaction est en cours de synchronisation.
+TRANSACTION_HISTORY_WALLET_COPY_TEXT=copier.
+TRANSACTION_HISTORY_WALLET_TAB_NORMAL_SEND_TRANSACTION_LIST_TEXT=Transaction envoyé
+TRANSACTION_HISTORY_WALLET_TAB_ANONYMOUS_SEND_TRANSACTION_LIST_TEXT=Transaction anonyme envoyé
+TRANSACTION_HISTORY_WALLET_TAB_NORMAL_RECEIVED_TRANSACTION_LIST_TEXT=Transaction reçu
+TRANSACTION_HISTORY_WALLET_TAB_ANONYMOUS_RECEIVE_TRANSACTION_LIST_TEXT=Transaction anonyme reçu
+TRANSACTION_HISTORY_WALLET_TAB_BLOCK_REWARD_RECEIVED_LIST_TEXT=Récompense Blocs
+######## END TRANSACTION HISTORY WALLET MENU ########
+#
+#
+######## START RESTORE WALLET MENU ########
+#
+#
+RESTORE_WALLET_LABEL_TITLE_TEXT=Restaurer votre portefeuille:
+RESTORE_WALLET_LABEL_SELECT_PATH_FILE_TEXT=Sélectionner le dossier de destination de votre portefeuille:
+RESTORE_WALLET_LABEL_PRIVATE_KEY_TEXT=Saisissez votre clé privé de votre portefeuille:
+RESTORE_WALLET_LABEL_PASSWORD_TEXT=Saisissez un nouveau mot de passe:
+RESTORE_WALLET_BUTTON_SUBMIT_RESTORE_TEXT=Restaurer
+######## END RESTORE WALLET MENU #########
+#
+#
+######## START CHANGE PASSWORD WALLET MENU ########
+CHANGE_PASSWORD_WALLET_LABEL_OLD_PASSWORD_TEXT=Votre mot de passe actuel:
+CHANGE_PASSWORD_WALLET_LABEL_PIN_CODE_TEXT=Votre code pin:
+CHANGE_PASSWORD_WALLET_LABEL_NEW_PASSWORD_TEXT=Votre nouveau mot de passe:
+######## END CHANGE PASSWORD WALLET MENU ########
+#
+#
+######## START CREATE WALLET SUBMENU ########
+CREATE_WALLET_SUBMENU_LABEL_INFORMATION_TEXT=Votre portefeuille a été créer avec succès, Merci de sauvegarder vos clés publique/privé ainsi que votre code pin.\n 1.La clé privé vous permet de récupérer votre portefeuille en cas de perte de celui-ci.\n2. La clé publique vous permet de vous connecter à votre portefeuille à l'aide de votre\n addresse de portefeuille et de votre mot de passe actuel.\n3. Si vous perdez votre code pin, vous perdez l'accès au contrôle de votre portefeuille.\nNous prenons aucune responsabilité si vous perdez votre portefeuille.
+CREATE_WALLET_SUBMENU_LABEL_PUBLIC_KEY_TEXT=Votre clé publique:
+CREATE_WALLET_SUBMENU_LABEL_PRIVATE_KEY_TEXT=Votre clé privé:
+CREATE_WALLET_SUBMENU_LABEL_PIN_CODE_TEXT=Votre code pin:
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_TEXT=Copier les informations
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_TEXT=J'ai copié/coller les informations.
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_TITLE_TEXT=Êtes vous sûr?
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_CONTENT_TEXT=Êtes vous sur d'avoir copier les informations de votre portefeuille? Elles ne pourront pas être récupérer une fois la fenêtre fermé.
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_TITLE_TEXT=Information portefeuille copié
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_CONTENT_TEXT=Les informations de votre portefeuille sont copiées, assurez vous de les sauvegarder.
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_SAFE_CONTENT_TEXT=N'oubliez pas de copier vos informations et de le sauvegarder au cas où.
+######## END CREATE WALLET SUBMENU ########
+#
+#
+######## START PIN CODE SETTING STATUS MENU ########
+PIN_CODE_SETTING_MENU_LABEL_STATUS_INFORMATION_TEXT=Statut du code pin:
+PIN_CODE_SETTING_MENU_LABEL_STATUS_ENABLED_TEXT=Activé
+PIN_CODE_SETTING_MENU_BUTTON_STATUS_ENABLE_TEXT=Activer
+PIN_CODE_SETTING_MENU_LABEL_STATUS_DISABLED_TEXT=Désactivé
+PIN_CODE_SETTING_MENU_BUTTON_STATUS_DISABLE_TEXT=Désactiver
+PIN_CODE_SETTING_MENU_LABEL_INFORMATION_TEXT=Le paramètre de votre code pin est indépendant de vos autres portefeuilles\n si vous en avez plusieurs.
+PIN_CODE_SETTING_MENU_LABEL_WRITE_PASSWORD_TEXT=Votre mot de passe:
+PIN_CODE_SETTING_MENU_LABEL_WRITE_PIN_CODE_TEXT=Votre code pin:
+PIN_CODE_SETTING_MENU_BUTTON_SUBMIT_CHANGE_TEXT=OK
+######## END PIN CODE SETTING STATUS MENU ########
+#
+#
+######## START PIN CODE SUBMIT MENU ########
+PIN_CODE_SUBMIT_MENU_LABEL_INFORMATION_TEXT=La blockchain demande votre code pin.\nVeuillez le saisir pour prendre le controle de votre portefeuille:
+PIN_CODE_SUBMIT_MENU_WARNING_TEXT=Merci de bien vouloir écrire votre code pin.
+PIN_CODE_SUBMIT_MENU_NETWORK_ERROR_TEXT=Impossible d'envoyer votre code pin, votre portefeuille a été déconnecté du réseau.
+######## END PIN CODE SUBMIT MENU ########
+#
+#
+######## START REMOTE NODE SETTING MENU ########
+REMOTE_NODE_SETTING_MENU_USE_SEED_NODE_NETWORK_ONLY_TEXT=Utilisé les seed nodes pour synchroniser votre portefeuille. [Recommandé]
+REMOTE_NODE_SETTING_MENU_USE_REMOTE_NODE_TEXT=Utilisé la liste publique de remote node pour synchroniser votre portefeuille.
+REMOTE_NODE_SETTING_MENU_USE_REMOTE_NODE_INFORMATION_TEXT=La liste publique de remote node est fournis par le réseau des seed nodes.\nSi aucun des remote nodes publiques ne fonctionne\nou si aucun n'est disponible le portefeuille utilisera\n le réseau de seed nodes automatiquement.
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_TEXT=Synchronisation via un hôte de remote node [Non recommandé].
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_INFORMATION_TEXT=Utilisé seulement cette option si l'hôte cible vous appartient\n à l'occurence votre remote node.
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_HOSTNAME_TEXT=Nom d'hôte/IP:
+REMOTE_NODE_SETTING_MENU_SAVE_SETTING_TEXT=Vos paramètres de synchronisation ont été sauvegardé, votre portefeuille va être déconnecté.
+######## END REMOTE NODE SETTING MENU ########
+#
+#
+####### START WAITING MENU #######
+WAITING_MENU_LABEL_TEXT=Merci de patienter.
+######## END WAITING MENU ########
+#
+#
+####### START NETWORK WAITING MENU #######
+NETWORK_WAITING_MENU_LABEL_TEXT=Connection perdu, reconnection de votre portefeuille en cours.
+######## END NETWORK WAITING MENU ########
+#
+#
+####### START WAITING CREATE WALLET MENU #######
+WAITING_CREATE_WALLET_MENU_LABEL_TEXT=Votre portefeuille est en attente de création.\nMerci de patienter.
+######## END NETWORK WAITING MENU ########
+#
+#
+#################### END GRAPHIC PART #######################
+############# START TRANSLATION NETWORK TEXT ################
+WALLET_NETWORK_OBJECT_TRANSACTION_CACHE_ERROR_TEXT=Impossible de lire le cache de votre historique de transaction, votre portefeuille resynchronisera vos transactions automatiquement.
+WALLET_NETWORK_OBJECT_ANONYMITY_TRANSACTION_CACHE_ERROR_TEXT=Impossible de lire le cache de votre historique de transaction anonymes, votre portefeuille resynchronisera vos transactions automatiquement.
+WALLET_NETWORK_OBJECT_BLOCK_CACHE_READ_SUCCESS_TEXT=Cache de blocs synchronisé chargé avec succès.
+WALLET_NETWORK_OBJECT_DISCONNECTED_TEXT=Déconnecter.
+WALLET_NETWORK_OBJECT_CANNOT_CONNECT_WALLET_CONTENT_TEXT=Impossible de connecter votre portefeuille au réseau, merci de réessayer plus tard ou de vérifier votre connection.
+WALLET_NETWORK_OBJECT_CANNOT_CONNECT_WALLET_TITLE_TEXT=Erreur réseau
+WALLET_NETWORK_OBJECT_SUCCESS_CONNECT_WALLET_CONTENT_TEXT=Votre portefeuille a été connecté avec succès au réseau.
+WALLET_NETWORK_OBJECT_SUCCESS_CONNECT_WALLET_TITLE_TEXT=Connection établie avec succès
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR1_CONTENT_TEXT=Votre mot de passe de portefeuille doit au moins contenir le nombre minimum de caractère requis (min: 8).
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR1_TITLE_TEXT=Pas assez de caractères.
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR2_CONTENT_TEXT=Votre mot de passe de portefeuille doit au moins contenir une lettre, chiffre et caractères spéciaux et de taille minimal de 8 caractères.
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR2_TITLE_TEXT=Mot de passe pas assez fort.
+WALLET_NETWORK_OBJECT_PIN_CODE_ACCEPTED_CONTENT_TEXT=Code pin accepté, la blockchain vous le redemandera toute les 15 minutes, vous pouvez désactiver cette demande dans les paramètres.
+WALLET_NETWORK_OBJECT_PIN_CODE_ACCEPTED_TITLE_TEXT=Code pin accepté
+WALLET_NETWORK_OBJECT_PIN_CODE_REFUSED_CONTENT_TEXT=Mauvais code pin, veuillez réessayer. Après 5 tentatives échoués, votre portefeuille sera banni de toute connection pendant 1 heure.
+WALLET_NETWORK_OBJECT_PIN_CODE_REFUSED_TITLE_TEXT=Mauvais code pin
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_INVALID_AMOUNT_CONTENT_TEXT=Transaction refusé. Le montant saisie est invalide.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_INVALID_AMOUNT_TITLE_TEXT=Transaction refusé
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_AMOUNT_CONTENT_TEXT=Transaction refusé. Votre solde est insuffisant.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_AMOUNT_TITLE_TEXT=Transaction refusé
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_FEE_CONTENT_TEXT=Transaction refusé. Le montant de la taxe de transaction est insuffisante.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_FEE_TITLE_TEXT=Transaction refusé
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_CONTENT_TEXT=Envoi de transaction occupé, La blockchain est actuellement entrain de vérifier l'état de santé de votre solde, merci de patienter un petit moment. Si le problème persiste veuillez vous reconnecter.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_TITLE_TEXT=Envoi de transaction occupé
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_RECEIVE_CONTENT_TEXT=Envoi de transaction occupé, veuillez patienter un petit moment, vous pourrez envoyer une transaction à la date suivante: %Date
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_RECEIVE_TITLE_TEXT=Envoi de transaction occupé
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ACCEPTED_CONTENT_TEXT=Transaction accepté par la blockchain, votre historique de transaction va être mis à jour.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ACCEPTED_TITLE_TEXT=Transaction accepté
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ADDRESS_NOT_VALID_CONTENT_TEXT=L'addresse de portefeuille n'est pas valide, veuillez la vérifier.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ADDRESS_NOT_VALID_TITLE_TEXT=Addresse de portefeuille invalide.
+WALLET_NETWORK_OBJECT_BANNED_CONTENT_TEXT=Votre portefeuille est banni, veuillez patienter une heure, sinon vous pouvez le débloquer en utilisant votre clé privé.
+WALLET_NETWORK_OBJECT_BANNED_TITLE_TEXT=Wallet banni
+WALLET_NETWORK_OBJECT_ALREADY_CONNECTED_CONTENT_TEXT=Votre portefeuille est déjà connecté, veuillez réessayer plus tard. Si ce n'est pas vous utiliser votre clé privé pour déconnecter l'utilisateur actuellement connecter sur votre portefeuille pour changer les accès et reprendre son controle.
+WALLET_NETWORK_OBJECT_ALREADY_CONNECTED_TITLE_TEXT=Votre portefeuille est déjà connecté
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_ACCEPTED_CONTENT_TEXT=Le mot de passe de votre portefeuille a été modifié avec succès.
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_ACCEPTED_TITLE_TEXT=Mot de passe modifié avec succès
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_REFUSED_CONTENT_TEXT=Le mot de passe de votre portefeuille n'a pas été modifié, merci de vérifier votre mot de passe actuel et votre code pin saisie.
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_REFUSED_TITLE_TEXT=Modification de mot de passe refusé
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_ACCEPTED_CONTENT_TEXT=Votre statut de code pin de votre portefeuille a été modifié avec succès.
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_ACCEPTED_TITLE_TEXT=Statut code pin modifié
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_REFUSED_CONTENT_TEXT=Votre statut de code pin de votre portefeuille n'a pas été modifié avec succès, vérifier votre mot de passe et votre code pin saisie.
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_REFUSED_TITLE_TEXT=Status code pin inchangé
+WALLET_NETWORK_OBJECT_WARNING_WALLET_CONNECTION_CONTENT_TEXT=Attention, la blockchain a détecté une tentative de connection sur votre portefeuille alors que vous êtes connecté sur celui-ci. Si ce n'est pas vous merci de bien vouloir modifier votre mot de passe le plus rapidement possible.
+WALLET_NETWORK_OBJECT_WARNING_WALLET_CONNECTION_TITLE_TEXT=Tentative de connection détecté.
+WALLET_NETWORK_OBJECT_CANNOT_SEND_PACKET_TEXT=Votre portefeuille a été déconnecté du réseau.
+############# END TRANSLATION NETWORK TEXT ################

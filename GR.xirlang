@@ -1,0 +1,318 @@
+##############################################################
+#########>> CHARACTER HELP: << ###############################
+#########>> \n for make a new line << ########################
+#########>> %CoinMinName call the min name of the coin << ####
+#########>> %CoinName  the name of the coin << ###############
+#########>> %AmountSend amount coin to send << ###############
+#########>> %TargetWallet target wallet     << ###############
+#########>> %Date insert a date 			<< ###############
+##############################################################
+#
+# WARNING: LANGUAGE_NAME need to be at the first position. 
+LANGUAGE_NAME=Ελληνικά
+CONTRIBUTOR=AlpHA
+#
+######## START MAIN INTERFACE ########
+#
+## Menu File
+MENU_FILE_TEXT=Αρχείο
+MENU_FILE_MAIN_MENU_TEXT=Κύριο Μενού
+MENU_FILE_CREATE_WALLET_MENU_TEXT=Δημιουργία Πορτοφολιού
+MENU_FILE_OPEN_WALLET_MENU_TEXT=Άνοιγμα Πορτοφολιού
+MENU_FILE_FUNCTION_CLOSE_WALLET_TEXT=Κλείσιμο Πορτοφολιού
+MENU_FILE_RESTORE_WALLET_MENU_TEXT=Επαναφορά Πορτοφολιού
+MENU_FILE_FUNCTION_EXIT_TEXT=Έξοδος
+#
+## Menu Language
+MENU_LANGUAGE_TEXT=Γλώσσα
+#
+## Menu Setting
+MENU_SETTING_TEXT=Ρυθμίσεις
+MENU_SETTING_SECURITY_TEXT=Ασφάλεια
+#
+## SubMenu Security
+SUBMENU_SETTING_SECURITY_CONFIG_CHANGE_PASSWORD_TEXT=Αλλαγή Κωδικού Πρόσβασης Πορτοφολιού
+SUBMENU_SETTING_SECURITY_CONFIG_PIN_CODE_TEXT=Αλλαγή Κατάστασης Κωδικού PIN
+#
+## Menu Sync
+MENU_SETTING_SYNC_TEXT=Συγχρονισμός
+#
+## SubMenu Sync
+SUBMENU_SETTING_SYNC_REMOTE_NODE_CONFIG_TEXT=Ρυθμίσεις Απομακρυσμένου Node
+SUBMENU_SETTING_RESYNC_TRANSACTION_TEXT=Επανασυγχρονισμός Συναλλαγών
+SUBMENU_SETTING_RESYNC_BLOCK_TEXT=Επανασυγχρονισμός των Blocks
+RESYNC_TRANSACTION_HISTORY_TITLE_TEXT=Επανασυγχρονισμός Ιστορικού Συναλλαγών
+RESYNC_TRANSACTION_HISTORY_CONTENT_TEXT=Θέλετε πραγματικά να επανασυγχρονίσετε το ιστορικό συναλλαγών σας;
+RESYNC_BLOCK_EXPLORER_TITLE_TEXT=Επανασυγχρονισμός Περιηγητή των Blocks
+RESYNC_BLOCK_EXPLORER_CONTENT_TEXT=Θέλετε πραγματικά να επανασυγχρονίσετε τον περιηγητή των blocks σας;
+#
+## Menu Help
+SUBMENU_HELP_TEXT=Help
+SUBMENU_HELP_ABOUT_TEXT=About
+#
+## Panel Wallet Information
+PANEL_WALLET_BALANCE_TEXT=Υπόλοιπο:
+PANEL_WALLET_ADDRESS_TEXT=Διεύθυνση Πορτοφολιού:
+PANEL_WALLET_TOTAL_PENDING_TRANSACTION_ON_RECEIVE_TEXT=Αναμενόμενες Εισερχόμενες Συναλλαγές:
+#
+## Button Wallet Menu
+BUTTON_WALLET_OVERVIEW_TEXT=Επισκόπηση
+BUTTON_WALLET_SEND_TRANSACTION_TEXT=Αποστολή %CoinMinName
+BUTTON_WALLET_TRANSACTION_HISTORY_TEXT=Ιστορικό Συναλλαγών
+BUTTON_WALLET_BLOCK_EXPLORER_TEXT=Περιηγητής των Blocks
+BUTTON_WALLET_MINING_TEXT=Εξόρυξη
+#
+######## END MAIN INTERFACE ########
+#
+#
+######## START BLOCK EXPLORER MENU ########
+#
+GRID_BLOCK_EXPLORER_COLUMN_ID_TEXT=ID
+GRID_BLOCK_EXPLORER_COLUMN_HASH_TEXT=Hash
+GRID_BLOCK_EXPLORER_COLUMN_REWARD_TEXT=Ανταμοιβή
+GRID_BLOCK_EXPLORER_COLUMN_DIFFICULTY_TEXT=Δυσκολία
+GRID_BLOCK_EXPLORER_COLUMN_DATE_CREATE_TEXT=Ημερομηνία Δημιουργίας
+GRID_BLOCK_EXPLORER_COLUMN_DATE_FOUND_TEXT=Ημερομηνία Εύρεσης
+GRID_BLOCK_EXPLORER_COLUMN_TRANSACTION_HASH_TEXT=Hash Συναλλαγής
+#
+######## END BLOCK EXPLORER MENU ########
+#
+#
+######## START CREATE WALLET MENU ########
+#
+CREATE_WALLET_LABEL_TITLE_TEXT=Δημιουργία Πορτοφολιού:
+CREATE_WALLET_LABEL_PASSWORD_REQUIREMENT_TEXT=Ο κωδικός πρόσβασης πρέπει να αποτελείται από τουλάχιστον 8 χαρακτήρες\nκαι να περιέχει γράμματα, αριθμούς και ειδικούς χαρακτήρες.
+CREATE_WALLET_LABEL_SELECT_WALLET_FILE_TEXT=Επιλέξτε σημείο αποθήκευσης για το νέο πορτοφόλι:
+CREATE_WALLET_LABEL_INPUT_WALLET_PASSWORD_TEXT=Πληκτρολογήστε κωδικό πρόσβασης για το πορτοφόλι:
+CREATE_WALLET_BUTTON_SUBMIT_CREATE_TEXT=Δημιουργία\nΠορτοφολιού
+CREATE_WALLET_ERROR_CANT_CONNECT_MESSAGE_CONTENT_TEXT=Σφάλμα: Δεν είναι δυνατή η σύνδεση με το δίκτυο ώστε να δημιουργηθεί το πορτοφόλι, παρακαλώ δοκιμάστε αργότερα.
+
+#
+######## END CREATE WALLET MENU ########
+#
+#
+######## START MAIN WALLET MENU ########
+#
+MAIN_WALLET_LABEL_WELCOME_INFORMATION_TEXT=Καλωσήρθατε στο πορτοφόλι %CoinName \nΑνοίξτε ένα πορτοφόλι ή δημιουργήστε ένα νέο για να αρχίσετε\n αποστολές/παραλαβές %CoinMinName:
+MAIN_WALLET_LABEL_HELP_INFORMATION_TEXT=Μπορείτε να αλλάξετε τη γλώσσα του πορτοφολιού εάν χρειαστεί. \nΓια οποιοδήποτε πρόβλημα επικοινωνήστε με την Ομάδα στο Discord.
+MAIN_WALLET_BUTTON_OPEN_WALLET_MENU_TEXT=Άνοιγμα Πορτοφολιού
+MAIN_WALLET_BUTTON_CREATE_WALLET_MENU_TEXT=Δημιουργία\nΠορτοφολιού
+#
+######## END MAIN WALLET MENU ########
+#
+#
+######## START OPEN WALLET MENU ########
+#
+OPEN_WALLET_LABEL_TITLE_TEXT=Άνοιγμα Πορτοφολιού:
+OPEN_WALLET_LABEL_FILE_SELECTED_TEXT=Επιλεγμένο αρχείο πορτοφολιού:
+OPEN_WALLET_LABEL_YOUR_PASSWORD_TEXT=Πληκτρολογήστε τον κωδικό πρόσβασης του πορτοφολιού:
+OPEN_WALLET_BUTTON_SEARCH_WALLET_FILE_TEXT=Αναζήτηση
+OPEN_WALLET_BUTTON_SUBMIT_WALLET_FILE_TEXT=OK
+OPEN_WALLET_ERROR_MESSAGE_NO_PASSWORD_WRITTED_TITLE_TEXT=Παρακαλώ εισάγετε έναν κωδικό
+OPEN_WALLET_ERROR_MESSAGE_NO_PASSWORD_WRITTED_CONTENT_TEXT=Πρέπει να πληκτρολογήσετε τον κωδικό πρόσβασης του πορτοφολιού σας.
+OPEN_WALLET_ERROR_MESSAGE_WRONG_PASSWORD_WRITTED_TITLE_TEXT=Δεν είναι δυνατό το άνοιγμα του αρχείου του πορτοφολιού.
+OPEN_WALLET_ERROR_MESSAGE_WRONG_PASSWORD_WRITTED_CONTENT_TEXT=Σφάλμα: Το αρχείο του πορτοφολιού σας έχει αλλοιωθεί, πρέπει να χρησιμοποιήσετε το προσωπικό σας κλειδί για να το ανακτήσετε.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_TITLE_TEXT=Σφάλμα Δικτύου.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_CONTENT_TEXT=Δεν είναι δυνατή η σύνδεση στο δίκτυο, παρακαλώ προσπαθήστε αργότερα.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_WRONG_PASSWORD_WRITTED_TITLE_TEXT=Δεν ήταν δυνατό το άνοιγμα του αρχείου του πορτοφολιού σας.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_WRONG_PASSWORD_WRITTED_CONTENT_TEXT=Δεν είναι δυνατή η σύνδεση στο δίκτυο, είτε ο κωδικός πρόσβασης είναι λάθος ή το αρχείο πορτοφολιού είναι αλλοιωμένο.
+#
+######## END OPEN WALLET MENU ########
+#
+#
+######## START OVERVIEW WALLET MENU ########
+OVERVIEW_WALLET_LABEL_TITLE_TEXT=Στατιστικά του %CoinName Network
+OVERVIEW_WALLET_LABEL_COIN_MAX_SUPPLY_TEXT=Μέγιστη παροχή κερμάτων:
+OVERVIEW_WALLET_LABEL_COIN_CIRCULATING_TEXT=Κέρματα που κυκλοφορούν:
+OVERVIEW_WALLET_LABEL_TRANSACTION_FEE_ACCUMULATED_TEXT=Τέλη Συναλλαγών που Συγκεντρώθηκαν:
+OVERVIEW_WALLET_LABEL_TOTAL_COIN_MINED_TEXT=Συνολικά Κέρματα που Εξορύχθηκαν:
+OVERVIEW_WALLET_LABEL_BLOCKCHAIN_HEIGHT_TEXT=Ύψος του Blockchain:
+OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_MINED_TEXT=Συνολικά Blocks που Εξορύχθηκαν:
+OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_LEFT_TEXT=Συνολικά Εναπομείναντα:
+OVERVIEW_WALLET_LABEL_NETWORK_DIFFICULTY_TEXT=Δυσκολία του Network:
+OVERVIEW_WALLET_LABEL_NETWORK_HASHRATE_TEXT=Hashrate του Network:
+OVERVIEW_WALLET_LABEL_LAST_BLOCK_FOUND_TEXT=Ημερομηνία Τελευταίας Εύρεσης Block:
+OVERVIEW_WALLET_BUTTON_TOOLTIP_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=Αυτός είναι ο συνολικός αριθμός κερμάτων που συγκεντρώθηκαν από τέλη συναλλαγών. Το ποσό αυτό χρησιμοποιείται για τη δημιουργία νέων block όταν η μέγιστη παροχή κερμάτων επιτευχθεί. Αυτό το ποσό επίσης χρησιμοποιείται για την πληρωμή των ανοιχτών απομακρυσμένων nodes που επιτυχώς εγγράφτηκαν στο δίκτυο.
+OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_TITLE_TEXT=Πληροφορίες για τα Τέλη Συναλλαγών που Συγκεντρώθηκαν
+OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=Αυτός είναι ο συνολικός αριθμός κερμάτων που συγκεντρώθηκαν από τέλη συναλλαγών. Το ποσό αυτό χρησιμοποιείται για τη δημιουργία νέων block όταν η μέγιστη παροχή κερμάτων επιτευχθεί. Αυτό το ποσό επίσης χρησιμοποιείται για την πληρωμή των ανοιχτών απομακρυσμένων nodes που επιτυχώς εγγράφτηκαν στο δίκτυο.
+#
+######## END OVERVIEW WALLET MENU ########
+#
+#
+######## START SEND TRANSACTION WALLET MENU ########
+SEND_TRANSACTION_WALLET_LABEL_TITLE_TEXT=Αποστολή %CoinMinName:
+SEND_TRANSACTION_WALLET_LABEL_WALLET_ADDRESS_TARGET_TEXT=Διεύθυνση Πορτοφολιού Παραλήπτη:
+SEND_TRANSACTION_WALLET_LABEL_AMOUNT_TEXT=Ποσό Αποστολής:
+SEND_TRANSACTION_WALLET_LABEL_FEE_TEXT=Τέλη:
+SEND_TRANSACTION_WALLET_LABEL_ESTIMATED_RECEIVE_TIME_TEXT=Εκτιμώμενος Χρόνος Συναλλαγής:
+SEND_TRANSACTION_WALLET_CHECKBOX_OPTION_ANONYMITY_TEXT=Απόκρυψη της διεύθυνσης πορτοφολιού σας (αόρατη στον παραλήπτη).
+SEND_TRANSACTION_WALLET_BUTTON_SUBMIT_TRANSACTION_TEXT=ΑΠΟΣΤΟΛΗ
+SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_TITLE_TEXT=Επιβεβαίωση Ανώνυμης Επιλογής
+SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_CONTENT1_TEXT=Όταν αποστείλετε τα %CoinMinName σας, το blockchain θα ανεβάσει τα τέλη κατα 0.01 %CoinMinName, θέλετε σίγουρα να χρησιμοποιήσετε αυτή την επιλογή; [αυτά τα επιπλέον τέλη θα δοθούν στην ομάδα των προγραμματιστών/δοκιμαστών]
+SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_TITLE_TEXT=Πληροφορίες Τελών Συναλλαγής
+SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_CONTENT_TEXT=Το ελάχιστο τέλος είναι 0.001 %CoinMinName
+SEND_TRANSACTION_WALLET_TOOLTIP_FEE_INFORMATION_CONTENT_TEXT=Το ελάχιστο τέλος είναι 0.001 %CoinMinName
+SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_TITLE_TEXT=Εκτιμώμενος χρόνος διεκπεραίωσης της συναλλαγής.
+SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_CONTENT_TEXT=Ο εκτιμώμενος χρόνος διεκπεραίωσης της συναλλαγής υπολογίζεται από τον συνολικό αριθμό εκκρεμών συναλλαγών στο δίκτυο. Εάν ο παραλήπτης έχει πολλές συναλλαγές οι οποίες εκκρεμούν να ληφθούν, ο χρόνος που χρειάζεται για να παραλάβει τα %CoinMinName σας θα αυξηθεί (1 δευτερόλεπτο ανα εκκρεμή συναλλαγή).
+SEND_TRANSACTION_WALLET_MESSAGE_SUBMIT_TITLE_TEXT=Επιβεβαίωση Αποστολής %CoinMinName
+SEND_TRANSACTION_WALLET_MESSAGE_SUBMIT_CONTENT_TEXT=Θέλετε σίγουρα να αποστείλετε το ποσό των : %AmountSend %CoinMinName στην διεύθυνση : %TargetWallet.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_FEE_CONTENT_TEXT=Σφάλμα στο εισηγμένο ποσό τέλους.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_AMOUNT_CONTENT_TEXT=Σφάλμα στο εισηγμένο ποσό αποστολής.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_TARGET_CONTENT_TEXT=Σφάλμα στην εισηγμένη διεύθυνση πορτοφολιού παραλήπτη.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_CONNECTION_TITLE_TEXT=Σφάλμα Σύνδεσης
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_CONNECTION_CONTENT_TEXT=Σφάλμα Σύνδεσης, δεν είναι η δυνατή η υποβολή του αιτήματος συναλλαγής σας στο δίκτυο.
+
+SEND_TRANSACTION_WALLET_TIME_SECOND_TEXT=δευτερόλεπτο/α.
+SEND_TRANSACTION_WALLET_TIME_MINUTE_TEXT=λεπτό/α.
+SEND_TRANSACTION_WALLET_TIME_HOUR_TEXT=ώρα/ες.
+SEND_TRANSACTION_WALLET_TIME_DAY_TEXT=μερα/ες.
+######## END SEND TRANSACTION WALLET MENU ########
+#
+#
+######## START TRANSACTION HISTORY WALLET MENU ########
+TRANSACTION_HISTORY_WALLET_COLUMN_ID=ID
+TRANSACTION_HISTORY_WALLET_COLUMN_DATE=Ημερομηνία
+TRANSACTION_HISTORY_WALLET_COLUMN_TYPE=Τύπος
+TRANSACTION_HISTORY_WALLET_COLUMN_HASH=Hash
+TRANSACTION_HISTORY_WALLET_COLUMN_AMOUNT=Ποσό
+TRANSACTION_HISTORY_WALLET_COLUMN_FEE=Τέλη
+TRANSACTION_HISTORY_WALLET_COLUMN_ADDRESS=Διεύθυνση
+TRANSACTION_HISTORY_WALLET_COLUMN_DATE_RECEIVED=Ημερομηνία Αποστολής/Παραλαβής
+TRANSACTION_HISTORY_WALLET_COLUMN_BLOCK_HEIGHT_SRC=Ύψος Block Προέλευσης
+TRANSACTION_HISTORY_WALLET_WAITING_MESSAGE_SYNC_TEXT=Παρακαλώ περιμένετε, το ιστορικό συναλλαγών συγχρονίζεται.
+TRANSACTION_HISTORY_WALLET_COPY_TEXT=Αντιγράφηκε.
+TRANSACTION_HISTORY_WALLET_TAB_NORMAL_SEND_TRANSACTION_LIST_TEXT=Απεσταλμένες Συναλλαγές
+TRANSACTION_HISTORY_WALLET_TAB_ANONYMOUS_SEND_TRANSACTION_LIST_TEXT=Ανώνυμα Απεσταλμένες Συναλλαγές
+TRANSACTION_HISTORY_WALLET_TAB_NORMAL_RECEIVED_TRANSACTION_LIST_TEXT=Ληφθείσες Συναλλαγές
+TRANSACTION_HISTORY_WALLET_TAB_ANONYMOUS_RECEIVE_TRANSACTION_LIST_TEXT=Ανώνυμα Ληφθείσες Συναλλαγές
+TRANSACTION_HISTORY_WALLET_TAB_BLOCK_REWARD_RECEIVED_LIST_TEXT=Αμοιβή του Block
+######## END TRANSACTION HISTORY WALLET MENU ########
+#
+#
+######## START RESTORE WALLET MENU ########
+#
+#
+RESTORE_WALLET_LABEL_TITLE_TEXT=Επαναφορά Πορτοφολιού:
+RESTORE_WALLET_LABEL_SELECT_PATH_FILE_TEXT=Επιλέξτε σημείο αποθήκευσης του επαναφερμένου πορτοφολιού:
+RESTORE_WALLET_LABEL_PRIVATE_KEY_TEXT=Πληκτρολογήστε το Προσωπικό Κλειδί σας:
+RESTORE_WALLET_LABEL_PASSWORD_TEXT=Πληκτρολογήστε νέο κωδικό πρόσβασης πορτοφολιού:
+RESTORE_WALLET_BUTTON_SUBMIT_RESTORE_TEXT=Επαναφορά
+######## END RESTORE WALLET MENU #########
+#
+#
+######## START CHANGE PASSWORD WALLET MENU ########
+CHANGE_PASSWORD_WALLET_LABEL_OLD_PASSWORD_TEXT=Πληκτρολογήστε τον τρέχοντα κωδικό πρόσβασης:
+CHANGE_PASSWORD_WALLET_LABEL_PIN_CODE_TEXT=Πληκτρολογήστε τον κωδικό PIN σας:
+CHANGE_PASSWORD_WALLET_LABEL_NEW_PASSWORD_TEXT=Πληκτρολογήστε νέο κωδικό:
+######## END CHANGE PASSWORD WALLET MENU ########
+#
+#
+######## START CREATE WALLET SUBMENU ########
+CREATE_WALLET_SUBMENU_LABEL_INFORMATION_TEXT=Το πορτοφόλι σας δημιουργήθηκε επιτυχώς, παρακαλώ κρατήστε το προσωπικό σας\n κλειδί και τον κωδικό PIN κάπου με ασφάλεια σε περίπτωση απώλειας του αρχείου πορτοφολιού.\nΕάν χάσετε το προσωπικό σας κλειδί, δεν θα έχετε τη δυνατότητα ανάκτησης του αρχείου πορτοφολιού σε\nπερίπτωση απώλειας. Εάν χάσετε το δημόσιο κλειδί σας, δεν θα έχετε τη δυνατότητα χρήσης της διεύθυνσης\nπορτοφολιού και του κωδικού πρόσβασης για ανάκτηση των δεδομένων πληροφοριών του πορτοφολιού σας.\nΕάν χάσετε τον κωδικό PIN σας, δεν θα έχετε πρόσβαση στο πορτοφόλι σας.\nΔεν παίρνουμε καμία ευθύνη σε περίπτωση απώλειας των στοιχείων,\nέχετε την πλήρη ευθύνη για την ασφάλεια τους.
+CREATE_WALLET_SUBMENU_LABEL_PUBLIC_KEY_TEXT=Το Δημόσιο Κλειδί Πορτοφολιού Σας:
+CREATE_WALLET_SUBMENU_LABEL_PRIVATE_KEY_TEXT=Το Προσωπικό Κλειδί Πορτοφολιού Σας:
+CREATE_WALLET_SUBMENU_LABEL_PIN_CODE_TEXT=Ο Κωδικός PIN σας:
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_TEXT=Αντιγραφή Πληροφοριών Πορτοφολιού
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_TEXT=Έχω διασφαλίσει την ασφάλεια των πληροφοριών του πορτοφολιού μου\nπριν να προχωρήσω.
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_TITLE_TEXT=Είστε σίγουρος/η;
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_CONTENT_TEXT=Βεβαιωθείτε ότι έχετε ασφαλίσει τις πληροφορίες πορτοφολιού σας. ΔΕΝ θα έχετε την δυνατότητα ανάκτησής τους αφότου κλείσετε αυτό το παράθυρο.
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_TITLE_TEXT=Πληροφορίες Πορτοφολιού Αντιγράφηκαν
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_CONTENT_TEXT=Οι πληροφορίες του πορτοφολιού αντιγράφηκαν, παρακαλώ βεβαιωθείτε ότι θα κρατήσετε αυτές τις πληροφορίες κάπου με ασφάλεια.
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_SAFE_CONTENT_TEXT=Μείνετε ασφαλείς, ασφαλίστε τις πληροφορίες πορτοφολιού σας κάπου σε περίπτωση απώλειας.
+######## END CREATE WALLET SUBMENU ########
+#
+#
+######## START PIN CODE SETTING STATUS MENU ########
+PIN_CODE_SETTING_MENU_LABEL_STATUS_INFORMATION_TEXT=Κατάσταση Κωδικού PIN: 
+PIN_CODE_SETTING_MENU_LABEL_STATUS_ENABLED_TEXT=Ενεργοποιημένο
+PIN_CODE_SETTING_MENU_BUTTON_STATUS_ENABLE_TEXT=Ενεργοποίηση
+PIN_CODE_SETTING_MENU_LABEL_STATUS_DISABLED_TEXT=Απενεργοποιημένο
+PIN_CODE_SETTING_MENU_BUTTON_STATUS_DISABLE_TEXT=Απενεργοποίηση
+PIN_CODE_SETTING_MENU_LABEL_INFORMATION_TEXT=Θυμηθείτε, αυτές οι ρυθμίσεις είναι μόνο για αυτό το πορτοφόλι, κάθε πορτοφόλι έχει τις δικές του, ανεξάρτητες ρυθμίσεις.
+PIN_CODE_SETTING_MENU_LABEL_WRITE_PASSWORD_TEXT=Πληκτρολογήστε τον κωδικό σας:
+PIN_CODE_SETTING_MENU_LABEL_WRITE_PIN_CODE_TEXT=Πληκτρολογήστε τον κωδικό PIN σας:
+PIN_CODE_SETTING_MENU_BUTTON_SUBMIT_CHANGE_TEXT=Υποβολή
+######## END PIN CODE SETTING STATUS MENU ########
+#
+#
+######## START PIN CODE SUBMIT MENU ########
+PIN_CODE_SUBMIT_MENU_LABEL_INFORMATION_TEXT=Το blockchain ζητάει τον κωδικό PIN σας.\nΠαρακαλώ πληκτρολογήσετε τον ώστε να συνεχίσετε\n να χρησιμοποιείτε το πορτοφόλι σας:
+PIN_CODE_SUBMIT_MENU_WARNING_TEXT=Πληκτρολογήστε τον κωδικό PIN σας.
+PIN_CODE_SUBMIT_MENU_NETWORK_ERROR_TEXT=Δεν είναι δυνατή η υποβολή του κωδικόυ PIN σας, το πορτοφόλι έχει αποσυνδεθεί.
+######## END PIN CODE SUBMIT MENU ########
+#
+#
+######## START REMOTE NODE SETTING MENU ########
+REMOTE_NODE_SETTING_MENU_USE_SEED_NODE_NETWORK_ONLY_TEXT=Χρήση μόνο του μητρικού node για τον\nσυγχρονισμό του πορτοφολιού [Προτείνεται].
+REMOTE_NODE_SETTING_MENU_USE_REMOTE_NODE_TEXT=Χρήση της λίστας ανοιχτών δημοσίων απομακρυσμένων\nnodes για τον συγχρονισμό του πορτοφολιού.
+REMOTE_NODE_SETTING_MENU_USE_REMOTE_NODE_INFORMATION_TEXT=Η λίστα ανοιχτών δημοσίων απομακρυσμένων nodes παρέχεται από το μητρικό node.\nΕάν δεν υπάρχουν διαθέσιμα ανοιχτά απομακρυσμένα nodes,\nτο μητρικό node θα επιλεχθεί αυτόματα.
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_TEXT=Χειροκίνητος συγχρονισμός χρησιμοποιώντας έναν εξυπηρετητή\nαπομακρυσμένου node [Δεν Προτείνεται].
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_INFORMATION_TEXT=Εάν αποφασίσετε να χρησιμοποιήσετε αυτή την επιλογή,\nπροτείνεται να χρησιμοποιήσετε το ιδιωτικό σας απομακρυσμένο node ΜΟΝΟ.
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_HOSTNAME_TEXT=Όνομα Εξυπηρετητή / IP:
+REMOTE_NODE_SETTING_MENU_SAVE_SETTING_TEXT=Οι ρυθμίσειε συγχρονισμού σας αποθηκεύτηκαν. Παρακαλώ ανοίξτε πάλι το πορτοφόλι σας.
+######## END REMOTE NODE SETTING MENU ########
+#
+#
+####### START WAITING MENU #######
+WAITING_MENU_LABEL_TEXT=Παρακαλώ Περιμένετε.
+######## END WAITING MENU ########
+#
+#
+####### START NETWORK WAITING MENU #######
+NETWORK_WAITING_MENU_LABEL_TEXT=Η σύνδεση χάθηκε, γίνεται προσπάθεια επανασύνδεσης του πορτοφολιού σας.
+######## END NETWORK WAITING MENU ########
+#
+#
+####### START WAITING CREATE WALLET MENU #######
+WAITING_CREATE_WALLET_MENU_LABEL_TEXT=Η δημιουργία του πορτοφολιού σας\nεκκρεμεί. Παρακαλώ Περιμένετε.
+######## END NETWORK WAITING MENU ########
+#
+#
+#################### END GRAPHIC PART #######################
+############# START TRANSLATION NETWORK TEXT ################
+WALLET_NETWORK_OBJECT_TRANSACTION_CACHE_ERROR_TEXT=Δεν είναι δυνατή η ανάγνωση του cache συναλλαγών του πορτοφολιού σας, το πορτοφόλι θα επανασυγχρονίσει το ιστορικό συναλλαγών σας.
+WALLET_NETWORK_OBJECT_ANONYMITY_TRANSACTION_CACHE_ERROR_TEXT=Δεν είναι δυνατή η ανάγνωση του cache ανώνυμων συναλλαγών του πορτοφολιού σας, το πορτοφόλι θα επανασυγχρονίσει το ιστορικό ανώνυμων συναλλαγων σας.
+WALLET_NETWORK_OBJECT_BLOCK_CACHE_READ_SUCCESS_TEXT=Το cache των blocks φορτώθηκε επιτυχώς.
+WALLET_NETWORK_OBJECT_DISCONNECTED_TEXT=Μη Συνδεδεμένο.
+WALLET_NETWORK_OBJECT_CANNOT_CONNECT_WALLET_CONTENT_TEXT=Δεν είναι δυνατή η σύνδεση του πορτοφολιού με το δίκτυο, παρακαλώ βεβαιωθείτε ότι υπάρχει σύνδεση στο Ίντερνετ.
+WALLET_NETWORK_OBJECT_CANNOT_CONNECT_WALLET_TITLE_TEXT=Σφάλμα Δικτύου
+WALLET_NETWORK_OBJECT_SUCCESS_CONNECT_WALLET_CONTENT_TEXT=Το πορτοφόλι σας επανασυνδέθηκε επιτυχώς στο δίκτυο.
+WALLET_NETWORK_OBJECT_SUCCESS_CONNECT_WALLET_TITLE_TEXT=Σύνδεση Επιτυχής
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR1_CONTENT_TEXT=Ο κωδικός πρόσβασης πορτοφολιού πρέπει να περιέχει περισσότερους χαρακτήρες (ελάχιστο: 8).
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR1_TITLE_TEXT=Ο κωδικός πρόσβασης δεν περιέχει αρκετούς χαρακτήρες
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR2_CONTENT_TEXT=Ο κωδικός πρόσβασης του πορτοφολιού πρέπει να περιέχει γράμματα, αριθμούς και ειδικούς χαρακτήρες.
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR2_TITLE_TEXT=Ο κωδικός δεν είναι αρκετά ισχυρός
+WALLET_NETWORK_OBJECT_PIN_CODE_ACCEPTED_CONTENT_TEXT=Ο κωδικός PIN έγινε αποδεκτός, το blockchain θα ζητάει τον κωδικό PIN σας κάθε 15 λεπτά.
+WALLET_NETWORK_OBJECT_PIN_CODE_ACCEPTED_TITLE_TEXT=Κωδικός PIN Αποδεκτός
+WALLET_NETWORK_OBJECT_PIN_CODE_REFUSED_CONTENT_TEXT=Εσφαλμένος κωδικός PIN, παρακαλώ προσπαθήστε πάλι. Ύστερα από 5 αποτυχημένες προσπάθειες, το πορτοφόλι θα μπλοκάρει για 1 ώρα.
+WALLET_NETWORK_OBJECT_PIN_CODE_REFUSED_TITLE_TEXT=Εσφαλμένος κωδικός PIN
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_INVALID_AMOUNT_CONTENT_TEXT=Συναλλαγή Απορρίφθηκε. Εισάγατε μη έγκυρο ποσό αποστολής.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_INVALID_AMOUNT_TITLE_TEXT=Συναλλαγή Απορρίφθηκε
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_AMOUNT_CONTENT_TEXT=Συναλλαγή Απορρίφθηκε. Το εισηγμένο ποσό αποστολής δεν επαρκεί.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_AMOUNT_TITLE_TEXT=Συναλλαγή Απορρίφθηκε
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_FEE_CONTENT_TEXT=Συναλλαγή Απορρίφθηκε. Το εισηγμένο ποσό τέλους δεν επαρκεί.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_FEE_TITLE_TEXT=Συναλλαγή Απορρίφθηκε
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_CONTENT_TEXT=Απασχολημένο στέλνοντας μια συναλλαγή, το blockchain ελέγχει την υγεία του υπολοίπου σας, παρακαλώ περιμένετε πριν αποστείλετε άλλη συναλλαγή ή προσπαθήστε να επανασυνδεθείτε εάν η κατάσταση αυτή παραμένει.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_TITLE_TEXT=Έλεγχος Υγείας Υπολοίπου
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_RECEIVE_CONTENT_TEXT=Απασχολημένο λαμβάνοντας μια συναλλαγή, παρακαλώ περιμένετε πριν αποστείλετε μια συναλλαγή: %Date
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_RECEIVE_TITLE_TEXT=Απασχολημένο με μια Συναλλαγή
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ACCEPTED_CONTENT_TEXT=Η συναλλαγή έγινε αποδεκτή από την μεριά του blockchain, το ιστορικό θα ενημερωθεί όσο πιο γρήγορα γίνεται από ένα ανοιχτό απομακρυσμένο node ή χειροκίνητα από το node το οποίο επιλέξατε στη ρύθμιση χειροκίνητου απομακρυσμένου node.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ACCEPTED_TITLE_TEXT=Συναλλαγή Αποδεκτή
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ADDRESS_NOT_VALID_CONTENT_TEXT=Διεύθυνση πορτοφολιού εσφαλμένη, παρακαλώ ελέγξτε την εγκυρότητά της.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ADDRESS_NOT_VALID_TITLE_TEXT=Εσφαλμένη Διεύθυνση Πορτοφολιού
+WALLET_NETWORK_OBJECT_BANNED_CONTENT_TEXT=Το πορτοφόλι σας έχει μπλοκάρει για περίπου 1 ώρα, παρακαλώ προσπαθήστε να επανασυνδεθείτε αργότερα.
+WALLET_NETWORK_OBJECT_BANNED_TITLE_TEXT=Πορτοφόλι Μπλοκαρισμένο
+WALLET_NETWORK_OBJECT_ALREADY_CONNECTED_CONTENT_TEXT=Το πορτοφόλι σας έχει ήδη συνδεθεί, παρακαλώ προσπαθήστε να επανασυνδεθείτε αργότερα.
+WALLET_NETWORK_OBJECT_ALREADY_CONNECTED_TITLE_TEXT=Πορτοφόλι Ήδη Συνδεδεμένο
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_ACCEPTED_CONTENT_TEXT=Ο κωδικός πρόσβασης του πορτοφολιού άλλαξε επιτυχώς.
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_ACCEPTED_TITLE_TEXT=Κωδικός Αλλάχθηκε Επιτυχώς
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_REFUSED_CONTENT_TEXT=Ο κωδικός πρόσβασης δεν άλλαξε, παρακαλώ ελέγξτε τον παλιό κωδικό και τον κωδικό PIN.
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_REFUSED_TITLE_TEXT=Κωδικός Δεν Αλλάχθηκε
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_ACCEPTED_CONTENT_TEXT=Η κατάσταση του κωδικού PIN αλλάχθηκε επιτυχώς.
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_ACCEPTED_TITLE_TEXT=Κατάσταση Κωδικού PIN Αλλάχθηκε
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_REFUSED_CONTENT_TEXT=Η κατάσταση του κωδικού PIN δεν άλλαξε, παρακαλώ ελέγξτε τον κωδικό πρόσβασης και τον κωδικό PIN.
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_REFUSED_TITLE_TEXT=Κατάσταση Κωδικού PIN Δεν Αλλάχθηκε
+WALLET_NETWORK_OBJECT_WARNING_WALLET_CONNECTION_CONTENT_TEXT=Προσοχή, το blockchain εντόπισε απόπειρα σύνδεσης στο πορτοφόλι σας, εάν δεν είστε εσείς, προτείνεται να αλλάξετε τον κωδικό πρόσβασης σας το συντομότερο δυνατόν.
+WALLET_NETWORK_OBJECT_WARNING_WALLET_CONNECTION_TITLE_TEXT=Προειδοποίηση Δικτύου
+WALLET_NETWORK_OBJECT_CANNOT_SEND_PACKET_TEXT=Δεν ήταν δυνατή η αποστολή του πακέτου στο δίκτυο, το πορτοφόλι σας αποσυνδέθηκε.
+############# END TRANSLATION NETWORK TEXT ################
