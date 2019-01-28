@@ -52,6 +52,7 @@ SUBMENU_HELP_ABOUT_TEXT=A propos
 #
 ## Panel Wallet Information
 PANEL_WALLET_BALANCE_TEXT=Balance:
+PANEL_WALLET_PENDING_BALANCE_TEXT=Montant en attente de reception:
 PANEL_WALLET_ADDRESS_TEXT=Addresse Portefeuille:
 PANEL_WALLET_TOTAL_PENDING_TRANSACTION_ON_RECEIVE_TEXT=Total transaction en attente:
 #
@@ -132,6 +133,7 @@ OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_LEFT_TEXT=Total Bloc restant:
 OVERVIEW_WALLET_LABEL_NETWORK_DIFFICULTY_TEXT=Difficulté Réseau:
 OVERVIEW_WALLET_LABEL_NETWORK_HASHRATE_TEXT=Hashrate Réseau:
 OVERVIEW_WALLET_LABEL_LAST_BLOCK_FOUND_TEXT=Dernier bloc trouvé:
+OVERVIEW_WALLET_LABEL_TOTAL_COIN_PENDING=Montant de Pièce en Attente:
 OVERVIEW_WALLET_BUTTON_TOOLTIP_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=C'est le montant total de pièce accumulé des taxes de transaction. Ce montant sera réinjecter lorsque le total d'approvisionnement de pièce sera épuisé pour créer de nouveau bloc de mining. Ce montant est également utilisé pour payer les gérants de remote node publique.
 OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_TITLE_TEXT=Information sur les taxe de transaction collecté
 OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=C'est le montant total de pièce accumulé des taxes de transaction. Ce montant sera réinjecter lorsque le total d'approvisionnement de pièce sera épuisé pour créer de nouveau bloc de mining. Ce montant est également utilisé pour payer les gérants de remote node publique.
@@ -150,8 +152,8 @@ SEND_TRANSACTION_WALLET_BUTTON_SUBMIT_TRANSACTION_TEXT=Envoyer transaction
 SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_TITLE_TEXT=Confirmer l'option d'anonymat
 SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_CONTENT1_TEXT=Une fois la transaction envoyer, la blockchain va augmenter la taxe de transaction de +0,01 %CoinMinName, voulez vous vraiment utiliser cette option? [Le montant de la taxe de cette option sera envoyé à l'équipe de Développeurs/Testeurs comme étant une donation.]
 SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_TITLE_TEXT=Information taxe de transaction
-SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_CONTENT_TEXT=Le montant minimum de la taxe de transaction est de 0.001 %CoinMinName
-SEND_TRANSACTION_WALLET_TOOLTIP_FEE_INFORMATION_CONTENT_TEXT=Le montant minimum de la taxe de transaction est de 0.001 %CoinMinName
+SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_CONTENT_TEXT=Le montant minimum de la taxe de transaction est de 0.00001000 %CoinMinName
+SEND_TRANSACTION_WALLET_TOOLTIP_FEE_INFORMATION_CONTENT_TEXT=Le montant minimum de la taxe de transaction est de 0.00001000 %CoinMinName
 SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_TITLE_TEXT=Information sur le temps de reception estimé
 SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_CONTENT_TEXT=Le temps de reception estimé est calculé en fonction du nombre de transaction en attente sur le réseau et depuis le montant de taxe de transaction que vous avez choisi. Le temps de reception de la transaction peut varier si votre cible attend plusieurs autres transactions en attente (+1 seconde par transaction en attente du côté de la cible).
 SEND_TRANSACTION_WALLET_MESSAGE_SUBMIT_TITLE_TEXT=Confirmer l'envoi de votre transaction.

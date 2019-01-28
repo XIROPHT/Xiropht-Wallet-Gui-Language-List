@@ -52,6 +52,7 @@ SUBMENU_HELP_ABOUT_TEXT=About
 #
 ## Panel Wallet Information
 PANEL_WALLET_BALANCE_TEXT=Υπόλοιπο:
+PANEL_WALLET_PENDING_BALANCE_TEXT=Amount in pending to receive:
 PANEL_WALLET_ADDRESS_TEXT=Διεύθυνση Πορτοφολιού:
 PANEL_WALLET_TOTAL_PENDING_TRANSACTION_ON_RECEIVE_TEXT=Αναμενόμενες Εισερχόμενες Συναλλαγές:
 #
@@ -132,6 +133,7 @@ OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_LEFT_TEXT=Συνολικά Εναπομείν�
 OVERVIEW_WALLET_LABEL_NETWORK_DIFFICULTY_TEXT=Δυσκολία του Network:
 OVERVIEW_WALLET_LABEL_NETWORK_HASHRATE_TEXT=Hashrate του Network:
 OVERVIEW_WALLET_LABEL_LAST_BLOCK_FOUND_TEXT=Ημερομηνία Τελευταίας Εύρεσης Block:
+OVERVIEW_WALLET_LABEL_TOTAL_COIN_PENDING=Total Coins in Pending:
 OVERVIEW_WALLET_BUTTON_TOOLTIP_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=Αυτός είναι ο συνολικός αριθμός κερμάτων που συγκεντρώθηκαν από τέλη συναλλαγών. Το ποσό αυτό χρησιμοποιείται για τη δημιουργία νέων block όταν η μέγιστη παροχή κερμάτων επιτευχθεί. Αυτό το ποσό επίσης χρησιμοποιείται για την πληρωμή των ανοιχτών απομακρυσμένων nodes που επιτυχώς εγγράφτηκαν στο δίκτυο.
 OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_TITLE_TEXT=Πληροφορίες για τα Τέλη Συναλλαγών που Συγκεντρώθηκαν
 OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=Αυτός είναι ο συνολικός αριθμός κερμάτων που συγκεντρώθηκαν από τέλη συναλλαγών. Το ποσό αυτό χρησιμοποιείται για τη δημιουργία νέων block όταν η μέγιστη παροχή κερμάτων επιτευχθεί. Αυτό το ποσό επίσης χρησιμοποιείται για την πληρωμή των ανοιχτών απομακρυσμένων nodes που επιτυχώς εγγράφτηκαν στο δίκτυο.
@@ -150,8 +152,8 @@ SEND_TRANSACTION_WALLET_BUTTON_SUBMIT_TRANSACTION_TEXT=ΑΠΟΣΤΟΛΗ
 SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_TITLE_TEXT=Επιβεβαίωση Ανώνυμης Επιλογής
 SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_CONTENT1_TEXT=Όταν αποστείλετε τα %CoinMinName σας, το blockchain θα ανεβάσει τα τέλη κατα 0.01 %CoinMinName, θέλετε σίγουρα να χρησιμοποιήσετε αυτή την επιλογή; [αυτά τα επιπλέον τέλη θα δοθούν στην ομάδα των προγραμματιστών/δοκιμαστών]
 SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_TITLE_TEXT=Πληροφορίες Τελών Συναλλαγής
-SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_CONTENT_TEXT=Το ελάχιστο τέλος είναι 0.001 %CoinMinName
-SEND_TRANSACTION_WALLET_TOOLTIP_FEE_INFORMATION_CONTENT_TEXT=Το ελάχιστο τέλος είναι 0.001 %CoinMinName
+SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_CONTENT_TEXT=Το ελάχιστο τέλος είναι 0.00001000 %CoinMinName
+SEND_TRANSACTION_WALLET_TOOLTIP_FEE_INFORMATION_CONTENT_TEXT=Το ελάχιστο τέλος είναι 0.00001000 %CoinMinName
 SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_TITLE_TEXT=Εκτιμώμενος χρόνος διεκπεραίωσης της συναλλαγής.
 SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_CONTENT_TEXT=Ο εκτιμώμενος χρόνος διεκπεραίωσης της συναλλαγής υπολογίζεται από τον συνολικό αριθμό εκκρεμών συναλλαγών στο δίκτυο. Εάν ο παραλήπτης έχει πολλές συναλλαγές οι οποίες εκκρεμούν να ληφθούν, ο χρόνος που χρειάζεται για να παραλάβει τα %CoinMinName σας θα αυξηθεί (1 δευτερόλεπτο ανα εκκρεμή συναλλαγή).
 SEND_TRANSACTION_WALLET_MESSAGE_SUBMIT_TITLE_TEXT=Επιβεβαίωση Αποστολής %CoinMinName

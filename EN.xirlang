@@ -52,6 +52,7 @@ SUBMENU_HELP_ABOUT_TEXT=About
 #
 ## Panel Wallet Information
 PANEL_WALLET_BALANCE_TEXT=Balance:
+PANEL_WALLET_PENDING_BALANCE_TEXT=Amount in pending to receive:
 PANEL_WALLET_ADDRESS_TEXT=Wallet Address:
 PANEL_WALLET_TOTAL_PENDING_TRANSACTION_ON_RECEIVE_TEXT=Pending Transactions To Be Received:
 #
@@ -132,6 +133,7 @@ OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_LEFT_TEXT=Total Blocks Left:
 OVERVIEW_WALLET_LABEL_NETWORK_DIFFICULTY_TEXT=Network Difficulty:
 OVERVIEW_WALLET_LABEL_NETWORK_HASHRATE_TEXT=Network Hashrate:
 OVERVIEW_WALLET_LABEL_LAST_BLOCK_FOUND_TEXT=Last Block Found Date:
+OVERVIEW_WALLET_LABEL_TOTAL_COIN_PENDING=Total Coins in Pending:
 OVERVIEW_WALLET_BUTTON_TOOLTIP_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=This is the total amount of coins accumulated from transaction fees. This amount is used for creating new blocks once the Coin Maximum Supply is reached. This amount is also used for paying public remote nodes successfully listed on the network.
 OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_TITLE_TEXT=Transaction Fees Accumulated Information
 OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=This is the total amount of coins accumulated from transaction fees. This amount is used for creating new blocks once the Coin Maximum Supply is reached. This amount is also used for paying public remote nodes successfully listed on the network.
@@ -150,8 +152,8 @@ SEND_TRANSACTION_WALLET_BUTTON_SUBMIT_TRANSACTION_TEXT=SEND
 SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_TITLE_TEXT=Confirm Anonymous Option
 SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_CONTENT1_TEXT=Once you send your %CoinMinName, the blockchain will increase the fees by 0,01 %CoinMinName, do you really want to use this option? [this extra fee will be given to the Developers/Testers Team]
 SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_TITLE_TEXT=Transaction Fees Information
-SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_CONTENT_TEXT=The minimum fee is 0.001 %CoinMinName
-SEND_TRANSACTION_WALLET_TOOLTIP_FEE_INFORMATION_CONTENT_TEXT=The minimum fee is 0.001 %CoinMinName
+SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_CONTENT_TEXT=The minimum fee is 0.00001000 %CoinMinName
+SEND_TRANSACTION_WALLET_TOOLTIP_FEE_INFORMATION_CONTENT_TEXT=The minimum fee is 0.00001000 %CoinMinName
 SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_TITLE_TEXT=Estimated time for transaction to be processed.
 SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_CONTENT_TEXT=Transaction procession time is estimated by calculating the total number of pending transactions on the network. Remember, if the recipient has multiple transactions pending to be received, that will also increase the time needed to receive your %CoinMinName (1 second per pending transaction).
 SEND_TRANSACTION_WALLET_MESSAGE_SUBMIT_TITLE_TEXT=Confirm Sending %CoinMinName
