@@ -61,7 +61,7 @@ BUTTON_WALLET_OVERVIEW_TEXT=Overview
 BUTTON_WALLET_SEND_TRANSACTION_TEXT=Send %CoinMinName
 BUTTON_WALLET_TRANSACTION_HISTORY_TEXT=Transaction History
 BUTTON_WALLET_BLOCK_EXPLORER_TEXT=Block Explorer
-BUTTON_WALLET_MINING_TEXT=Mining
+BUTTON_WALLET_CONTACT_TEXT=Contact(s)
 #
 ######## END MAIN INTERFACE ########
 #
@@ -268,6 +268,34 @@ NETWORK_WAITING_MENU_LABEL_TEXT=Connection has been lost, trying to reconnect yo
 ####### START WAITING CREATE WALLET MENU #######
 WAITING_CREATE_WALLET_MENU_LABEL_TEXT=Your Wallet's creation is pending.\nPlease wait a moment.
 ######## END NETWORK WAITING MENU ########
+#
+#
+####### START CONTACT MENU ########
+CONTACT_BUTTON_ADD_CONTACT_TEXT=New contact
+CONTACT_LIST_COLUMN_NAME_TEXT=Name
+CONTACT_LIST_COLUMN_ADDRESS_TEXT=Wallet Address
+CONTACT_LIST_COLUMN_ACTION_TEXT=Action
+CONTACT_LIST_BUTTON_REMOVE_TEXT=Remove
+CONTACT_LIST_COPY_ACTION_CONTENT_TEXT=contact information copied
+####### END CONTACT MENU #######
+#
+#
+####### START CONTACT SUBMENU ########
+CONTACT_SUBMENU_LABEL_CONTACT_NAME_TEXT=Contact Name:
+CONTACT_SUBMENU_LABEL_CONTACT_WALLET_ADDRESS_TEXT=Contact Wallet Address:
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_TITLE_TEXT=Empty contact name
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_CONTENT_TEXT=The contact name is empty, please insert a contact name.
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_TITLE_TEXT=Invalid contact name
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_CONTENT_TEXT=The contact name is invalid, please check characters of your  contact name.
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Empty contact wallet address
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=The contact wallet address is empty, please insert a wallet address to your contact.
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Invalid contact wallet address
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=The contact wallet address is invalid, please check characters of your contact wallet address.
+CONTACT_SUBMENU_ERROR_INSERT_CONTACT_TITLE_TEXT=Error to save new contact.
+CONTACT_SUBMENU_ERROR_INSERT_CONTACT_CONTENT_TEXT=Cannot save your new contact, it seems the contact name already exist.
+CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_TITLE_TEXT=New contact successfully saved.
+CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_CONTENT_TEXT=Your new contact has been saved successfully.
+####### END CONTACT MENU #######
 #
 #
 #################### END GRAPHIC PART #######################

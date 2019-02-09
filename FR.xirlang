@@ -61,7 +61,7 @@ BUTTON_WALLET_OVERVIEW_TEXT=Vue d'ensemble
 BUTTON_WALLET_SEND_TRANSACTION_TEXT=Envoyer une transaction
 BUTTON_WALLET_TRANSACTION_HISTORY_TEXT=Historique de transaction
 BUTTON_WALLET_BLOCK_EXPLORER_TEXT=Explorateur de Bloc
-BUTTON_WALLET_MINING_TEXT=Mining
+BUTTON_WALLET_CONTACT_TEXT=Contact(s)
 #
 ######## END MAIN INTERFACE ########
 #
@@ -268,6 +268,34 @@ NETWORK_WAITING_MENU_LABEL_TEXT=Connection perdu, reconnection de votre portefeu
 ####### START WAITING CREATE WALLET MENU #######
 WAITING_CREATE_WALLET_MENU_LABEL_TEXT=Votre portefeuille est en attente de création.\nMerci de patienter.
 ######## END NETWORK WAITING MENU ########
+#
+#
+####### START CONTACT MENU ########
+CONTACT_BUTTON_ADD_CONTACT_TEXT=Ajouter un contact
+CONTACT_LIST_COLUMN_NAME_TEXT=Nom
+CONTACT_LIST_COLUMN_ADDRESS_TEXT=Adresse de Portefeuille
+CONTACT_LIST_COLUMN_ACTION_TEXT=Action
+CONTACT_LIST_BUTTON_REMOVE_TEXT=Supprimer
+CONTACT_LIST_COPY_ACTION_CONTENT_TEXT=Information de contact copiée.
+####### END CONTACT MENU #######
+#
+#
+####### START CONTACT SUBMENU ########
+CONTACT_SUBMENU_LABEL_CONTACT_NAME_TEXT=Nom du contact:
+CONTACT_SUBMENU_LABEL_CONTACT_WALLET_ADDRESS_TEXT=Addresse de portefeuille du contact:
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_TITLE_TEXT=Nom de contact vide
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_CONTENT_TEXT=Le champ du nom du contact est vide, veuillez remplir le champ.
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_TITLE_TEXT=Nom de contact invalide
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_CONTENT_TEXT=Le nom de contact est invalide, merci de le vérifier.
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_TITLE_TEXT=L'addresse de portefeuille du contact est vide
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=L'addresse de portefeuille du contact est vide, veuillez remplir le champ.
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_TITLE_TEXT=L'addresse de portefeuille du contact est invalide
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=L'addresse du portefeuille du contact est invalide, celle-ci ne doit pas contenir d'espace, de caractères spéciaux.
+CONTACT_SUBMENU_ERROR_INSERT_CONTACT_TITLE_TEXT=Erreur de sauvegarde du contact.
+CONTACT_SUBMENU_ERROR_INSERT_CONTACT_CONTENT_TEXT=Impossible de sauvegarder votre contact, il semblerait qu'il existe déjà.
+CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_TITLE_TEXT=Nouveau contact sauvegardé
+CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_CONTENT_TEXT=Votre nouveau contact a été sauvegardé.
+####### END CONTACT MENU #######
 #
 #
 #################### END GRAPHIC PART #######################
