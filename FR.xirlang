@@ -277,6 +277,7 @@ CONTACT_LIST_COLUMN_ADDRESS_TEXT=Adresse de Portefeuille
 CONTACT_LIST_COLUMN_ACTION_TEXT=Action
 CONTACT_LIST_BUTTON_REMOVE_TEXT=Supprimer
 CONTACT_LIST_COPY_ACTION_CONTENT_TEXT=Information de contact copiée.
+CONTACT_LIST_REMOVE_ACTION_CONTENT_TEXT=Voulez vous vraiment supprimer ce contact?
 ####### END CONTACT MENU #######
 #
 #
