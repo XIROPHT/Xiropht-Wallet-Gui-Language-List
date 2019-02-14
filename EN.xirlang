@@ -51,8 +51,8 @@ SUBMENU_HELP_TEXT=Help
 SUBMENU_HELP_ABOUT_TEXT=About
 #
 ## Panel Wallet Information
+PANEL_WALLET_PENDING_BALANCE_TEXT=Amount Pending To Be received:
 PANEL_WALLET_BALANCE_TEXT=Balance:
-PANEL_WALLET_PENDING_BALANCE_TEXT=Amount in pending to receive:
 PANEL_WALLET_ADDRESS_TEXT=Wallet Address:
 PANEL_WALLET_TOTAL_PENDING_TRANSACTION_ON_RECEIVE_TEXT=Pending Transactions To Be Received:
 #
@@ -284,17 +284,17 @@ CONTACT_LIST_REMOVE_ACTION_CONTENT_TEXT=Do you really want to remove this contac
 ####### START CONTACT SUBMENU ########
 CONTACT_SUBMENU_LABEL_CONTACT_NAME_TEXT=Contact Name:
 CONTACT_SUBMENU_LABEL_CONTACT_WALLET_ADDRESS_TEXT=Contact Wallet Address:
-CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_TITLE_TEXT=Empty contact name
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_TITLE_TEXT=Empty Contact Name
 CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_CONTENT_TEXT=The contact name is empty, please insert a contact name.
-CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_TITLE_TEXT=Invalid contact name
-CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_CONTENT_TEXT=The contact name is invalid, please check characters of your  contact name.
-CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Empty contact wallet address
-CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=The contact wallet address is empty, please insert a wallet address to your contact.
-CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Invalid contact wallet address
-CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=The contact wallet address is invalid, please check characters of your contact wallet address.
-CONTACT_SUBMENU_ERROR_INSERT_CONTACT_TITLE_TEXT=Error to save new contact.
-CONTACT_SUBMENU_ERROR_INSERT_CONTACT_CONTENT_TEXT=Cannot save your new contact, it seems the contact name already exist.
-CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_TITLE_TEXT=New contact successfully saved.
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_TITLE_TEXT=Invalid Contact Name
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_CONTENT_TEXT=The contact name is invalid, please check the characters of the contact's name.
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Empty Contact Wallet Address
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=The contact wallet address is empty, please insert a contact wallet address.
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Invalid Contact Wallet Address
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=The contact wallet address is invalid, please check the characters of the contact's wallet address.
+CONTACT_SUBMENU_ERROR_INSERT_CONTACT_TITLE_TEXT=Error Saving Contact
+CONTACT_SUBMENU_ERROR_INSERT_CONTACT_CONTENT_TEXT=Cannot save your new contact, it seems the contact already exists.
+CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_TITLE_TEXT=Save Success
 CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_CONTENT_TEXT=Your new contact has been saved successfully.
 ####### END CONTACT MENU #######
 #

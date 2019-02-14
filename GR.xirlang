@@ -52,7 +52,7 @@ SUBMENU_HELP_ABOUT_TEXT=About
 #
 ## Panel Wallet Information
 PANEL_WALLET_BALANCE_TEXT=Υπόλοιπο:
-PANEL_WALLET_PENDING_BALANCE_TEXT=Amount in pending to receive:
+PANEL_WALLET_PENDING_BALANCE_TEXT=Ποσό σε αναμονή παραλαβής:
 PANEL_WALLET_ADDRESS_TEXT=Διεύθυνση Πορτοφολιού:
 PANEL_WALLET_TOTAL_PENDING_TRANSACTION_ON_RECEIVE_TEXT=Αναμενόμενες Εισερχόμενες Συναλλαγές:
 #
@@ -133,7 +133,7 @@ OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_LEFT_TEXT=Συνολικά Εναπομείν�
 OVERVIEW_WALLET_LABEL_NETWORK_DIFFICULTY_TEXT=Δυσκολία του Network:
 OVERVIEW_WALLET_LABEL_NETWORK_HASHRATE_TEXT=Hashrate του Network:
 OVERVIEW_WALLET_LABEL_LAST_BLOCK_FOUND_TEXT=Ημερομηνία Τελευταίας Εύρεσης Block:
-OVERVIEW_WALLET_LABEL_TOTAL_COIN_PENDING=Total Coins in Pending:
+OVERVIEW_WALLET_LABEL_TOTAL_COIN_PENDING=Συνολικός αριθμός κερμάτων σε αναμονή:
 OVERVIEW_WALLET_BUTTON_TOOLTIP_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=Αυτός είναι ο συνολικός αριθμός κερμάτων που συγκεντρώθηκαν από τέλη συναλλαγών. Το ποσό αυτό χρησιμοποιείται για τη δημιουργία νέων block όταν η μέγιστη παροχή κερμάτων επιτευχθεί. Αυτό το ποσό επίσης χρησιμοποιείται για την πληρωμή των ανοιχτών απομακρυσμένων nodes που επιτυχώς εγγράφτηκαν στο δίκτυο.
 OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_TITLE_TEXT=Πληροφορίες για τα Τέλη Συναλλαγών που Συγκεντρώθηκαν
 OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=Αυτός είναι ο συνολικός αριθμός κερμάτων που συγκεντρώθηκαν από τέλη συναλλαγών. Το ποσό αυτό χρησιμοποιείται για τη δημιουργία νέων block όταν η μέγιστη παροχή κερμάτων επιτευχθεί. Αυτό το ποσό επίσης χρησιμοποιείται για την πληρωμή των ανοιχτών απομακρυσμένων nodes που επιτυχώς εγγράφτηκαν στο δίκτυο.
@@ -271,31 +271,31 @@ WAITING_CREATE_WALLET_MENU_LABEL_TEXT=Η δημιουργία του πορτο�
 #
 #
 ####### START CONTACT MENU ########
-CONTACT_BUTTON_ADD_CONTACT_TEXT=New contact
-CONTACT_LIST_COLUMN_NAME_TEXT=Name
-CONTACT_LIST_COLUMN_ADDRESS_TEXT=Wallet Address
-CONTACT_LIST_COLUMN_ACTION_TEXT=Action
-CONTACT_LIST_BUTTON_REMOVE_TEXT=Remove
-CONTACT_LIST_COPY_ACTION_CONTENT_TEXT=contact information copied
-CONTACT_LIST_REMOVE_ACTION_CONTENT_TEXT=Do you really want to remove this contact?
+CONTACT_BUTTON_ADD_CONTACT_TEXT=Νέα Επαφή
+CONTACT_LIST_COLUMN_NAME_TEXT=Όνομα
+CONTACT_LIST_COLUMN_ADDRESS_TEXT=Διεύθυνση Πορτοφολιού
+CONTACT_LIST_COLUMN_ACTION_TEXT=Επιλογή
+CONTACT_LIST_BUTTON_REMOVE_TEXT=Διαγραφή
+CONTACT_LIST_COPY_ACTION_CONTENT_TEXT=πληροφορία επαφής αντιγράφηκε
+CONTACT_LIST_REMOVE_ACTION_CONTENT_TEXT=Θέλετε πραγματικά να διαγράψετε αυτή την επαφή;
 ####### END CONTACT MENU #######
 #
 #
 ####### START CONTACT SUBMENU ########
-CONTACT_SUBMENU_LABEL_CONTACT_NAME_TEXT=Contact Name:
-CONTACT_SUBMENU_LABEL_CONTACT_WALLET_ADDRESS_TEXT=Contact Wallet Address:
-CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_TITLE_TEXT=Empty contact name
-CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_CONTENT_TEXT=The contact name is empty, please insert a contact name.
-CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_TITLE_TEXT=Invalid contact name
-CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_CONTENT_TEXT=The contact name is invalid, please check characters of your  contact name.
-CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Empty contact wallet address
-CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=The contact wallet address is empty, please insert a wallet address to your contact.
-CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Invalid contact wallet address
-CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=The contact wallet address is invalid, please check characters of your contact wallet address.
-CONTACT_SUBMENU_ERROR_INSERT_CONTACT_TITLE_TEXT=Error to save new contact.
-CONTACT_SUBMENU_ERROR_INSERT_CONTACT_CONTENT_TEXT=Cannot save your new contact, it seems the contact name already exist.
-CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_TITLE_TEXT=New contact successfully saved.
-CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_CONTENT_TEXT=Your new contact has been saved successfully.
+CONTACT_SUBMENU_LABEL_CONTACT_NAME_TEXT=Όνομα Επαφής:
+CONTACT_SUBMENU_LABEL_CONTACT_WALLET_ADDRESS_TEXT=Διεύθυνση Πορτοφολιού Επαφής:
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_TITLE_TEXT=Κενό Όνομα Επαφής
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_CONTENT_TEXT=Το όνομα της επαφής είναι κενό, παρακαλώ εισάγετε ένα όνομα επαφής.
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_TITLE_TEXT=Λάθος Όνομα Επαφής
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_CONTENT_TEXT=Το όνομα επαφής είναι λανθασμένο, παρακαλώ ελέγξτε τους χαρακτήρες του ονόματος.
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Κενή Διεύθυνση Πορτοφολιού
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=Η διεύθυνση πορτοφολιού της επαφής είναι κενή, παρακαλώ εισάγετε μια διεύθυνση πορτοφολιού στην επαφη.
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Λάθος Διεύθυνση Πορτοφολιού Επαφής
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=Η διεύθυνση πορτοφολιού επαφής είναι λανθασμένη, παρακαλώ ελέγξτε τους χαρακτήρες της διεύθυνσης πορτοφολιού.
+CONTACT_SUBMENU_ERROR_INSERT_CONTACT_TITLE_TEXT=Σφάλμα Αποθήκευης Επαφής
+CONTACT_SUBMENU_ERROR_INSERT_CONTACT_CONTENT_TEXT=Δεν είναι δυνατή η αποθήκευση της νέας επαφής, η επαφή υπάρχει ήδη.
+CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_TITLE_TEXT=Επιτυχία Αποθήκευσης Επαφής
+CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_CONTENT_TEXT=Η νέα σας επαφή έχει αποθηκευτεί επιτυχώς.
 ####### END CONTACT MENU #######
 #
 #
