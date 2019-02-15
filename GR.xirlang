@@ -299,6 +299,11 @@ CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_CONTENT_TEXT=Η νέα σας επαφή 
 ####### END CONTACT MENU #######
 #
 #
+####### START FIRST START MENU ########
+FIRST_START_MENU_LABEL_WELCOME=Welcome on the wallet %CoinName, it seems this is your first running,\n please select your language:
+####### END CONTACT MENU #######
+#
+#
 #################### END GRAPHIC PART #######################
 ############# START TRANSLATION NETWORK TEXT ################
 WALLET_NETWORK_OBJECT_TRANSACTION_CACHE_ERROR_TEXT=Δεν είναι δυνατή η ανάγνωση του cache συναλλαγών του πορτοφολιού σας, το πορτοφόλι θα επανασυγχρονίσει το ιστορικό συναλλαγών σας.

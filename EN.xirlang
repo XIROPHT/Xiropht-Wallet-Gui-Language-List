@@ -299,6 +299,11 @@ CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_CONTENT_TEXT=Your new contact has been sa
 ####### END CONTACT MENU #######
 #
 #
+####### START FIRST START MENU ########
+FIRST_START_MENU_LABEL_WELCOME=Welcome on the wallet %CoinName, it seems this is your first running,\n please select your language:
+####### END CONTACT MENU #######
+#
+#
 #################### END GRAPHIC PART #######################
 ############# START TRANSLATION NETWORK TEXT ################
 WALLET_NETWORK_OBJECT_TRANSACTION_CACHE_ERROR_TEXT=Cannot read your wallet's transaction cache, wallet will resync your transaction history.

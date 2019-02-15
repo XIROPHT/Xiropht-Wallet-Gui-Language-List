@@ -299,6 +299,11 @@ CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_CONTENT_TEXT=Votre nouveau contact a √©t√
 ####### END CONTACT MENU #######
 #
 #
+####### START FIRST START MENU ########
+FIRST_START_MENU_LABEL_WELCOME=Bienvenue sur votre portefeuille %CoinName, il semblerait qu'il s'agit de votre premier\n lancement, veuillez choisir votre langue:
+####### END CONTACT MENU #######
+#
+#
 #################### END GRAPHIC PART #######################
 ############# START TRANSLATION NETWORK TEXT ################
 WALLET_NETWORK_OBJECT_TRANSACTION_CACHE_ERROR_TEXT=Impossible de lire le cache de votre historique de transaction, votre portefeuille resynchronisera vos transactions automatiquement.
