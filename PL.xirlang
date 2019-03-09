@@ -1,0 +1,354 @@
+﻿##############################################################
+#########>> CHARACTER HELP: << ###############################
+#########>> \n for make a new line << ########################
+#########>> %CoinMinName call the min name of the coin << ####
+#########>> %CoinName  the name of the coin << ###############
+#########>> %AmountSend amount coin to send << ###############
+#########>> %TargetWallet target wallet     << ###############
+#########>> %Date insert a date 			<< ###############
+##############################################################
+#
+# WARNING: LANGUAGE_NAME need to be at the first position. 
+LANGUAGE_NAME=Polski
+CONTRIBUTOR=XirophtEnthusiast
+#
+######## START MAIN INTERFACE ########
+#
+## Menu File
+MENU_FILE_TEXT=Plik
+MENU_FILE_MAIN_MENU_TEXT=Menu Główne
+MENU_FILE_CREATE_WALLET_MENU_TEXT=Utwórz Portfel
+MENU_FILE_OPEN_WALLET_MENU_TEXT=Otwórz Portfel
+MENU_FILE_FUNCTION_CLOSE_WALLET_TEXT=Zamknij Portfel
+MENU_FILE_RESTORE_WALLET_MENU_TEXT=Przywróć Portfel
+MENU_FILE_FUNCTION_EXIT_TEXT=Wyjdź
+#
+## Menu Language
+MENU_LANGUAGE_TEXT=Język
+#
+## Menu Setting
+MENU_SETTING_TEXT=Ustawienia
+MENU_SETTING_SECURITY_TEXT=Zabezpieczenia
+#
+## SubMenu Security
+SUBMENU_SETTING_SECURITY_CONFIG_CHANGE_PASSWORD_TEXT=Zmień hasło do Portfela
+SUBMENU_SETTING_SECURITY_CONFIG_PIN_CODE_TEXT=Ustaw stan kodu PIN
+#
+## Menu Sync
+MENU_SETTING_SYNC_TEXT=Synchronizuj
+#
+## SubMenu Sync
+SUBMENU_SETTING_SYNC_REMOTE_NODE_CONFIG_TEXT=Ustawienia zdalnego węzła
+SUBMENU_SETTING_RESYNC_TRANSACTION_TEXT=Resynchronizacja transakcji
+SUBMENU_SETTING_RESYNC_BLOCK_TEXT=Resynchronizacja Bloków
+RESYNC_TRANSACTION_HISTORY_TITLE_TEXT=Resynchronizacja historii transakcji
+RESYNC_TRANSACTION_HISTORY_CONTENT_TEXT=Czy napewno chcesz dokonać resynchronizacji historii transakcji?
+RESYNC_BLOCK_EXPLORER_TITLE_TEXT=Resynchronizacja eksploratora bloków
+RESYNC_BLOCK_EXPLORER_CONTENT_TEXT=Czy napewno chcesz dokonać resynchronizacji eksploratora bloków?
+#
+## Menu Help
+SUBMENU_HELP_TEXT=Pomoc
+SUBMENU_HELP_ABOUT_TEXT=O
+#
+## Panel Wallet Information
+PANEL_WALLET_PENDING_BALANCE_TEXT=Kwota oczekująca na przyjęcie:
+PANEL_WALLET_BALANCE_TEXT=Saldo:
+PANEL_WALLET_ADDRESS_TEXT=Adres Portfela:
+PANEL_WALLET_TOTAL_PENDING_TRANSACTION_ON_RECEIVE_TEXT=Oczekiwane transakcje do odebrania:
+#
+## Button Wallet Menu
+BUTTON_WALLET_OVERVIEW_TEXT=Przegląd
+BUTTON_WALLET_SEND_TRANSACTION_TEXT=Wyślij %CoinMinName
+BUTTON_WALLET_TRANSACTION_HISTORY_TEXT=Historia transakcji
+BUTTON_WALLET_BLOCK_EXPLORER_TEXT=Eksplorator bloków
+BUTTON_WALLET_CONTACT_TEXT=Kontakt(y)
+#
+######## END MAIN INTERFACE ########
+#
+#
+######## START BLOCK EXPLORER MENU ########
+#
+GRID_BLOCK_EXPLORER_COLUMN_ID_TEXT=ID
+GRID_BLOCK_EXPLORER_COLUMN_HASH_TEXT=Hash
+GRID_BLOCK_EXPLORER_COLUMN_REWARD_TEXT=Nagroda
+GRID_BLOCK_EXPLORER_COLUMN_DIFFICULTY_TEXT=Trudność
+GRID_BLOCK_EXPLORER_COLUMN_DATE_CREATE_TEXT=Data utworzenia
+GRID_BLOCK_EXPLORER_COLUMN_DATE_FOUND_TEXT=Datz Znalezienia
+GRID_BLOCK_EXPLORER_COLUMN_TRANSACTION_HASH_TEXT=Hash transakcji
+#
+######## END BLOCK EXPLORER MENU ########
+#
+#
+######## START CREATE WALLET MENU ########
+#
+CREATE_WALLET_LABEL_TITLE_TEXT=Utwórz portfel:
+CREATE_WALLET_LABEL_PASSWORD_REQUIREMENT_TEXT=Hasło musi mieć co najmniej 8 znaków i zawierać litery, cyfry oraz znaki specjalne.
+CREATE_WALLET_LABEL_SELECT_WALLET_FILE_TEXT=Wybierz katalog, w którym chcesz zapisać nowy portfel:
+CREATE_WALLET_LABEL_INPUT_WALLET_PASSWORD_TEXT=Wpisz hasło do portfela:
+CREATE_WALLET_BUTTON_SUBMIT_CREATE_TEXT=Utwórz portfel
+CREATE_WALLET_ERROR_CANT_CONNECT_MESSAGE_CONTENT_TEXT=Error: Nie można połączyć się z siecią w celu utworzenia portfela, spróbuj ponownie później.
+
+#
+######## END CREATE WALLET MENU ########
+#
+#
+######## START MAIN WALLET MENU ########
+#
+MAIN_WALLET_LABEL_WELCOME_INFORMATION_TEXT=Witaj w portfelu %CoinName Portfel\nOtwórz portfel lub utwórz nowy, aby rozpocząć wysyłanie / odbieranie %CoinMinName:
+MAIN_WALLET_LABEL_HELP_INFORMATION_TEXT=W razie potrzeby możesz zmienić język portfela. \nW przypadku jakichkolwiek problemów skontaktuj się z zespołem na Discord.
+MAIN_WALLET_BUTTON_OPEN_WALLET_MENU_TEXT=Otwórz portfel
+MAIN_WALLET_BUTTON_CREATE_WALLET_MENU_TEXT=Utwórz portfel
+#
+######## END MAIN WALLET MENU ########
+#
+#
+######## START OPEN WALLET MENU ########
+#
+OPEN_WALLET_LABEL_TITLE_TEXT=Open a wallet:
+OPEN_WALLET_LABEL_FILE_SELECTED_TEXT=Wybrano plik portfela:
+OPEN_WALLET_LABEL_YOUR_PASSWORD_TEXT=Wpisz hasło portfela:
+OPEN_WALLET_BUTTON_SEARCH_WALLET_FILE_TEXT=Szukaj
+OPEN_WALLET_BUTTON_SUBMIT_WALLET_FILE_TEXT=OK
+OPEN_WALLET_ERROR_MESSAGE_NO_PASSWORD_WRITTED_TITLE_TEXT=Wpisz hasło
+OPEN_WALLET_ERROR_MESSAGE_NO_PASSWORD_WRITTED_CONTENT_TEXT=Powinieneś wpisać hasło swojego portfela.
+OPEN_WALLET_ERROR_MESSAGE_WRONG_PASSWORD_WRITTED_TITLE_TEXT=Nie można otworzyć pliku portfela.
+OPEN_WALLET_ERROR_MESSAGE_WRONG_PASSWORD_WRITTED_CONTENT_TEXT=Błąd: Twój plik portfela jest uszkodzony, powinieneś użyć swojego klucza prywatnego, aby go przywrócić.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_TITLE_TEXT=Błąd sieci.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_CONTENT_TEXT=Nie można połączyć się z siecią. Spróbuj ponownie później.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_WRONG_PASSWORD_WRITTED_TITLE_TEXT=Nie można otworzyć pliku portfela.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_WRONG_PASSWORD_WRITTED_CONTENT_TEXT=Nie można połączyć się z siecią, hasło portfela jest nieprawidłowe lub plik portfela jest uszkodzony.
+#
+######## END OPEN WALLET MENU ########
+#
+#
+######## START OVERVIEW WALLET MENU ########
+OVERVIEW_WALLET_LABEL_TITLE_TEXT=Statystyki sieci
+OVERVIEW_WALLET_LABEL_COIN_MAX_SUPPLY_TEXT=Maksymalna ilość monet:
+OVERVIEW_WALLET_LABEL_COIN_CIRCULATING_TEXT=Monety w obiegu:
+OVERVIEW_WALLET_LABEL_TRANSACTION_FEE_ACCUMULATED_TEXT=Opłata transakcyjna skumulowana:
+OVERVIEW_WALLET_LABEL_TOTAL_COIN_MINED_TEXT=Łączna ilość wydobytych monet:
+OVERVIEW_WALLET_LABEL_BLOCKCHAIN_HEIGHT_TEXT=Numer bloku:
+OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_MINED_TEXT=Łączna ilość znalezionych bloków:
+OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_LEFT_TEXT=Pozostała ilość bloków:
+OVERVIEW_WALLET_LABEL_NETWORK_DIFFICULTY_TEXT=Trudność:
+OVERVIEW_WALLET_LABEL_NETWORK_HASHRATE_TEXT=Hashrate:
+OVERVIEW_WALLET_LABEL_LAST_BLOCK_FOUND_TEXT=Data znalezienia ostatniego bloku:
+OVERVIEW_WALLET_LABEL_TOTAL_COIN_PENDING=Łączna ilość monet oczekujących:
+OVERVIEW_WALLET_BUTTON_TOOLTIP_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=Jest to łączna kwota monet skumulowanych z opłat transakcyjnych. Ta kwota służy do tworzenia nowych bloków po osiągnięciu maksymalnego poziomu monety. Ta kwota jest również używana do płacenia publicznych zdalnych węzłów pomyślnie wymienionych w sieci.
+OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_TITLE_TEXT=Informacje o opłatach za transakcje Skumulowane.
+OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=Jest to łączna kwota monet skumulowanych z opłat transakcyjnych. Ta kwota służy do tworzenia nowych bloków po osiągnięciu maksymalnego poziomu monety. Ta kwota jest również używana do płacenia publicznych zdalnych węzłów pomyślnie wymienionych w sieci.
+#
+######## END OVERVIEW WALLET MENU ########
+#
+#
+######## START SEND TRANSACTION WALLET MENU ########
+SEND_TRANSACTION_WALLET_LABEL_TITLE_TEXT=Wyślij %CoinMinName:
+SEND_TRANSACTION_WALLET_LABEL_WALLET_ADDRESS_TARGET_TEXT=Adres odbiorcy:
+SEND_TRANSACTION_WALLET_LABEL_AMOUNT_TEXT=Kwota do wysłania:
+SEND_TRANSACTION_WALLET_LABEL_FEE_TEXT=Opłata:
+SEND_TRANSACTION_WALLET_LABEL_ESTIMATED_RECEIVE_TIME_TEXT=Przewidywany czas transakcji:
+SEND_TRANSACTION_WALLET_CHECKBOX_OPTION_ANONYMITY_TEXT=Ukryj adres swojego portfela (spraw, aby był niewidoczny dla odbiorcy).
+SEND_TRANSACTION_WALLET_BUTTON_SUBMIT_TRANSACTION_TEXT=WYŚLIJ
+SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_TITLE_TEXT=Potwierdź opcję anonimową
+SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_CONTENT1_TEXT=Kiedy wyślesz %CoinMinName, blockchain zwiększy opłaty o 0.00001 %CoinMinName, czy naprawdę chcesz skorzystać z tej opcji? [ta dodatkowa opłata zostanie przekazana zespołowi deweloperów / testerów]
+SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_TITLE_TEXT=Informacja o opłatach
+SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_CONTENT_TEXT=Minimalna opłata wynosi 0.00001000 %CoinMinName
+SEND_TRANSACTION_WALLET_TOOLTIP_FEE_INFORMATION_CONTENT_TEXT=Minimalna opłata wynosi 0.00001000 %CoinMinName
+SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_TITLE_TEXT=Szacowany czas przetwarzania transakcji.
+SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_CONTENT_TEXT=Czas przetwarzania transakcji szacowany jest poprzez obliczenie całkowitej liczby oczekujących transakcji w sieci. Pamiętaj, że jeśli adresat ma wiele transakcji oczekujących na otrzymanie, zwiększy to również czas potrzebny na otrzymanie %CoinMinName (1 sekunda na każdą transakcje oczekującą).
+SEND_TRANSACTION_WALLET_MESSAGE_SUBMIT_TITLE_TEXT=Potwierdź wysłanie %CoinMinName
+SEND_TRANSACTION_WALLET_MESSAGE_SUBMIT_CONTENT_TEXT=Czy na pewno chcesz wysłać kwotę : %AmountSend %CoinMinName to the address: %TargetWallet.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_FEE_CONTENT_TEXT=Błąd przy wprowadzaniu kwoty opłaty.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_AMOUNT_CONTENT_TEXT=Błąd przy wprowadzaniu ilości.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_TARGET_CONTENT_TEXT=Błąd na wejściu do portfela adresata.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_CONNECTION_TITLE_TEXT=Błąd połączenia
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_CONNECTION_CONTENT_TEXT=Błąd połączenia, nie można przesłać żądania transakcji do sieci.
+
+SEND_TRANSACTION_WALLET_TIME_SECOND_TEXT=sekunda(y).
+SEND_TRANSACTION_WALLET_TIME_MINUTE_TEXT=minuta(y).
+SEND_TRANSACTION_WALLET_TIME_HOUR_TEXT=godzina(y).
+SEND_TRANSACTION_WALLET_TIME_DAY_TEXT=dzień(dni).
+######## END SEND TRANSACTION WALLET MENU ########
+#
+#
+######## START TRANSACTION HISTORY WALLET MENU ########
+TRANSACTION_HISTORY_WALLET_COLUMN_ID=ID
+TRANSACTION_HISTORY_WALLET_COLUMN_DATE=Data
+TRANSACTION_HISTORY_WALLET_COLUMN_TYPE=Typ
+TRANSACTION_HISTORY_WALLET_COLUMN_HASH=Hash
+TRANSACTION_HISTORY_WALLET_COLUMN_AMOUNT=Kwota
+TRANSACTION_HISTORY_WALLET_COLUMN_FEE=Opłaty
+TRANSACTION_HISTORY_WALLET_COLUMN_ADDRESS=Adres
+TRANSACTION_HISTORY_WALLET_COLUMN_DATE_RECEIVED=Data Wysłane / odebrane
+TRANSACTION_HISTORY_WALLET_COLUMN_BLOCK_HEIGHT_SRC=Wysokość bloku źródłowego
+TRANSACTION_HISTORY_WALLET_WAITING_MESSAGE_SYNC_TEXT=Poczekaj chwilę, historia transakcji zostanie zsynchronizowana
+TRANSACTION_HISTORY_WALLET_COPY_TEXT=Skopiowane
+TRANSACTION_HISTORY_WALLET_TAB_NORMAL_SEND_TRANSACTION_LIST_TEXT=Wysłane transakcje
+TRANSACTION_HISTORY_WALLET_TAB_ANONYMOUS_SEND_TRANSACTION_LIST_TEXT=Anonimowo Wysłane Transakcje
+TRANSACTION_HISTORY_WALLET_TAB_NORMAL_RECEIVED_TRANSACTION_LIST_TEXT=Otrzymane transakcje
+TRANSACTION_HISTORY_WALLET_TAB_ANONYMOUS_RECEIVE_TRANSACTION_LIST_TEXT=Anonimowo otrzymane transakcje
+TRANSACTION_HISTORY_WALLET_TAB_BLOCK_REWARD_RECEIVED_LIST_TEXT=Nagroda za blok
+######## END TRANSACTION HISTORY WALLET MENU ########
+#
+#
+######## START RESTORE WALLET MENU ########
+#
+#
+RESTORE_WALLET_LABEL_TITLE_TEXT=Przywróć portfel:
+RESTORE_WALLET_LABEL_SELECT_PATH_FILE_TEXT=Wybierz katalog, do którego przywrócisz swój portfel, aby go zapisać:
+RESTORE_WALLET_LABEL_PRIVATE_KEY_TEXT=Wpisz swój klucz prywatny:
+RESTORE_WALLET_LABEL_PASSWORD_TEXT=Wpisz nowe hasło do portfela:
+RESTORE_WALLET_BUTTON_SUBMIT_RESTORE_TEXT=Przywróć
+######## END RESTORE WALLET MENU #########
+#
+#
+######## START CHANGE PASSWORD WALLET MENU ########
+CHANGE_PASSWORD_WALLET_LABEL_OLD_PASSWORD_TEXT=Wpisz bieżące hasło:
+CHANGE_PASSWORD_WALLET_LABEL_PIN_CODE_TEXT=Wpisz PIN:
+CHANGE_PASSWORD_WALLET_LABEL_NEW_PASSWORD_TEXT=Wpisz nowe hasło:
+######## END CHANGE PASSWORD WALLET MENU ########
+#
+#
+######## START CREATE WALLET SUBMENU ########
+CREATE_WALLET_SUBMENU_LABEL_INFORMATION_TEXT=Twój portfel został pomyślnie utworzony. Klucz prywatny i kod PIN należy przechowywać w bezpiecznym miejscu\nna wypadek, gdybyś zgubił swój portfel. Jeśli zgubisz swój klucz prywatny, nie będziesz mógł odzyskać pliku portfela na wypadek jego utraty.\nJeżeli zgubisz klucz publiczny, nie będziesz mógł użyć adresu portfela ani hasła do odzyskania danych\nw portfelu. W przypadku utraty kodu PIN nie można uzyskać dostępu do portfela.
+CREATE_WALLET_SUBMENU_LABEL_PUBLIC_KEY_TEXT=Twój klucz publiczny do portfela:
+CREATE_WALLET_SUBMENU_LABEL_PRIVATE_KEY_TEXT=Twój klucz prywatny do portfela:
+CREATE_WALLET_SUBMENU_LABEL_PIN_CODE_TEXT=Twój PIN:
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_TEXT=Skopiuj informacje o portfelu
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_TEXT=Przed kontynuowaniem zabezpieczyłem informacje o portfelu.
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_TITLE_TEXT=Jesteś pewien?
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_CONTENT_TEXT=Upewnij się, że zapisałeś informacje o swoim portfelu. NIE MOŻNA go odzyskać po zamknięciu tego okna.
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_TITLE_TEXT=Informacje o portfelu zostały skopiowane
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_CONTENT_TEXT=Twoje informacje o portfelu zostały skopiowane, nie zapomnij o bezpiecznym przechowywaniu tych informacji.
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_SAFE_CONTENT_TEXT=Bądź ostrożny, zabezpiecz informacje o portfelu na wszelki wypadek.
+######## END CREATE WALLET SUBMENU ########
+#
+#
+######## START PIN CODE SETTING STATUS MENU ########
+PIN_CODE_SETTING_MENU_LABEL_STATUS_INFORMATION_TEXT=Stan kodu PIN: 
+PIN_CODE_SETTING_MENU_LABEL_STATUS_ENABLED_TEXT=Włączony
+PIN_CODE_SETTING_MENU_BUTTON_STATUS_ENABLE_TEXT=Włącz
+PIN_CODE_SETTING_MENU_LABEL_STATUS_DISABLED_TEXT=Wyłączony
+PIN_CODE_SETTING_MENU_BUTTON_STATUS_DISABLE_TEXT=Wyłącz
+PIN_CODE_SETTING_MENU_LABEL_INFORMATION_TEXT=Pamiętaj, że te ustawienia dotyczą tylko tego portfela, ustawienia każdego portfela są niezależne.
+PIN_CODE_SETTING_MENU_LABEL_WRITE_PASSWORD_TEXT=Wpisz swoje hasło:
+PIN_CODE_SETTING_MENU_LABEL_WRITE_PIN_CODE_TEXT=Wpisz swój PIN:
+PIN_CODE_SETTING_MENU_BUTTON_SUBMIT_CHANGE_TEXT=Potwierdź
+######## END PIN CODE SETTING STATUS MENU ########
+#
+#
+######## START PIN CODE SUBMIT MENU ########
+PIN_CODE_SUBMIT_MENU_LABEL_INFORMATION_TEXT=Blockchain prosi o podanie kodu PIN.\nWpisz go, aby kontynuować korzystanie z portfela:
+PIN_CODE_SUBMIT_MENU_WARNING_TEXT=Proszę wpisz kod PIN.
+PIN_CODE_SUBMIT_MENU_NETWORK_ERROR_TEXT=Nie można przesłać kodu PIN, portfel został odłączony.
+######## END PIN CODE SUBMIT MENU ########
+#
+#
+######## START REMOTE NODE SETTING MENU ########
+REMOTE_NODE_SETTING_MENU_USE_SEED_NODE_NETWORK_ONLY_TEXT=Użyj tylko węzła początkowego do zsynchronizowania portfela [Zalecane].
+REMOTE_NODE_SETTING_MENU_USE_REMOTE_NODE_TEXT=Użyj publicznej listy zdalnych węzłów do synchronizacji portfela.
+REMOTE_NODE_SETTING_MENU_USE_REMOTE_NODE_INFORMATION_TEXT=Lista publicznych zdalnych węzłów jest dostarczana przez węzeł początkowy.\nJeśli nie są dostępne żadne publiczne węzły zdalne, tryb węzła początkowego zostanie wybrany automatycznie.
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_TEXT=Synchronizuj ręcznie, używając hosta zdalnego węzła [Nie zalecane].
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_INFORMATION_TEXT=Jeśli zdecydujesz się użyć tej opcji, zalecamy, aby  używać TYLKO własnego prywatnego zdalnego węzła.
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_HOSTNAME_TEXT=Hostname / IP:
+REMOTE_NODE_SETTING_MENU_SAVE_SETTING_TEXT=Twoje ustawienia synchronizacji zostały zapisane. Otwórz ponownie swój portfel.
+######## END REMOTE NODE SETTING MENU ########
+#
+#
+####### START WAITING MENU #######
+WAITING_MENU_LABEL_TEXT=Proszę czekać.
+######## END WAITING MENU ########
+#
+#
+####### START NETWORK WAITING MENU #######
+NETWORK_WAITING_MENU_LABEL_TEXT=Połączenie zostało utracone, próbuje ponownie połączyć twój portfel.
+######## END NETWORK WAITING MENU ########
+#
+#
+####### START WAITING CREATE WALLET MENU #######
+WAITING_CREATE_WALLET_MENU_LABEL_TEXT=Utworzenie Twojego Portfela jest w toku.\nProszę czekać.
+######## END NETWORK WAITING MENU ########
+#
+#
+####### START CONTACT MENU ########
+CONTACT_BUTTON_ADD_CONTACT_TEXT=Nowy kontakt
+CONTACT_LIST_COLUMN_NAME_TEXT=Imie
+CONTACT_LIST_COLUMN_ADDRESS_TEXT=Adres
+CONTACT_LIST_COLUMN_ACTION_TEXT=Akcja
+CONTACT_LIST_BUTTON_REMOVE_TEXT=Usuń
+CONTACT_LIST_COPY_ACTION_CONTENT_TEXT=informacje kontaktowe skopiowane
+CONTACT_LIST_REMOVE_ACTION_CONTENT_TEXT=Czy napewno chcesz usunąć ten kontakt?
+####### END CONTACT MENU #######
+#
+#
+####### START CONTACT SUBMENU ########
+CONTACT_SUBMENU_LABEL_CONTACT_NAME_TEXT=Imie:
+CONTACT_SUBMENU_LABEL_CONTACT_WALLET_ADDRESS_TEXT=Adres portfela:
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_TITLE_TEXT=Pole kontakt jest puste
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_CONTENT_TEXT=Pole kontakt jest puste, proszę podaj nazwę.
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_TITLE_TEXT=Nieprawidłowa nazwa kontaktu
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_CONTENT_TEXT=Nazwa kontaktu jest nieprawidłowa, sprawdź znaki nazwy kontaktu.
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Pole adres jest puste
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=Adres portfela kontaktowego jest pusty. Wstaw adres portfela kontaktowego.
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Nieprawidłowy adres portfela
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=Adres portfela kontaktowego jest nieprawidłowy, sprawdź znaki adresu portfela kontaktu.
+CONTACT_SUBMENU_ERROR_INSERT_CONTACT_TITLE_TEXT=Błąd zapisywania kontaktu
+CONTACT_SUBMENU_ERROR_INSERT_CONTACT_CONTENT_TEXT=Nie można zapisać nowego kontaktu, wygląda na to, że kontakt już istnieje.
+CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_TITLE_TEXT=Zapisano
+CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_CONTENT_TEXT=Twój nowy kontakt został zapisany pomyślnie.
+####### END CONTACT MENU #######
+#
+#
+####### START FIRST START MENU ########
+FIRST_START_MENU_LABEL_WELCOME=Witaj w portfelu %CoinName, wygląda na to, że to twoje pierwsze uruchomienie,\n wybierz język:
+####### END CONTACT MENU #######
+#
+#
+#################### END GRAPHIC PART #######################
+############# START TRANSLATION NETWORK TEXT ################
+WALLET_NETWORK_OBJECT_TRANSACTION_CACHE_ERROR_TEXT=Nie można odczytać pamięci podręcznej transakcji portfela, portfel ponownie zsynchronizuje historię transakcji.
+WALLET_NETWORK_OBJECT_ANONYMITY_TRANSACTION_CACHE_ERROR_TEXT=Nie można odczytać pamięci podręcznej anonimowych transakcji portfela, portfel zsynchronizuje twoją anonimową historię transakcji.
+WALLET_NETWORK_OBJECT_BLOCK_CACHE_READ_SUCCESS_TEXT=Pamięć podręczna bloku portfela została pomyślnie załadowana.
+WALLET_NETWORK_OBJECT_DISCONNECTED_TEXT=Nie połączony.
+WALLET_NETWORK_OBJECT_CANNOT_CONNECT_WALLET_CONTENT_TEXT=Nie można ponownie połączyć portfela z siecią, sprawdź połączenie internetowe.
+WALLET_NETWORK_OBJECT_CANNOT_CONNECT_WALLET_TITLE_TEXT=Błąd sieci
+WALLET_NETWORK_OBJECT_SUCCESS_CONNECT_WALLET_CONTENT_TEXT=Twój portfel został pomyślnie podłączony do sieci.
+WALLET_NETWORK_OBJECT_SUCCESS_CONNECT_WALLET_TITLE_TEXT=Połączenie powiodło się
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR1_CONTENT_TEXT=Hasło do portfela musi zawierać więcej znaków (minimum: 8).
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR1_TITLE_TEXT=Hasło nie zawiera wystarczającej liczby znaków.
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR2_CONTENT_TEXT=Hasło do portfela musi zawierać litery, cyfry i znaki specjalne.
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR2_TITLE_TEXT=Hasło nie jest wystarczająco silne.
+WALLET_NETWORK_OBJECT_PIN_CODE_ACCEPTED_CONTENT_TEXT=Kod PIN został zaakceptowany, urządzenie blokujące poprosi o podanie kodu PIN co 15 minut.
+WALLET_NETWORK_OBJECT_PIN_CODE_ACCEPTED_TITLE_TEXT=PIN Zaakceptowany
+WALLET_NETWORK_OBJECT_PIN_CODE_REFUSED_CONTENT_TEXT=Błędny kod PIN, proszę spróbuj ponownie. Po 5 nieudanych próbach portfel zostanie zablokowany na 1 godzinę.
+WALLET_NETWORK_OBJECT_PIN_CODE_REFUSED_TITLE_TEXT=Błędny kod PIN
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_INVALID_AMOUNT_CONTENT_TEXT=Transakcja została odrzucona. Podałeś nieprawidłową kwotę.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_INVALID_AMOUNT_TITLE_TEXT=Transakcja odrzucona
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_AMOUNT_CONTENT_TEXT=Transakcja odrzucona. Wpisana kwota jest niewystarczająca.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_AMOUNT_TITLE_TEXT=Transakcja odrzucona
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_FEE_CONTENT_TEXT=Transakcja odrzucona. Wpisana opłata jest niewystarczająca.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_FEE_TITLE_TEXT=Transakcja odrzucona
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_CONTENT_TEXT=Zajęty wysłaniem transakcji, blockchain obecnie sprawdza stan twojego salda, poczekaj chwilę, aby wysłać kolejną transakcję lub spróbuj ponownie się połączyć, jeśli ten stan będzie się utrzymywał.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_TITLE_TEXT=Sprawdzanie salda
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_RECEIVE_CONTENT_TEXT=Zajęty otrzymywanie transakcji, proszę czekać przed wysłaniem transakcji do: %Date
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_RECEIVE_TITLE_TEXT=Zajęty transakcją
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ACCEPTED_CONTENT_TEXT=Transakcja została zaakceptowana po stronie blockchain, twoja historia zostanie zaktualizowana jak najszybciej przez publiczny zdalny węzeł lub ręcznie z węzła wybranego w ręcznych ustawieniach węzła.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ACCEPTED_TITLE_TEXT=Transakcja zaakceptowana
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ADDRESS_NOT_VALID_CONTENT_TEXT=Nieprawidłowy adres portfela, popraw go.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ADDRESS_NOT_VALID_TITLE_TEXT=Nieprawidłowy adres portfela
+WALLET_NETWORK_OBJECT_BANNED_CONTENT_TEXT=Twój portfel został zablokowany na około godzinę, spróbuj ponownie połączyć się później.
+WALLET_NETWORK_OBJECT_BANNED_TITLE_TEXT=Zablokowany portfel
+WALLET_NETWORK_OBJECT_ALREADY_CONNECTED_CONTENT_TEXT=Twój portfel jest już podłączony, spróbuj ponownie połączyć się później.
+WALLET_NETWORK_OBJECT_ALREADY_CONNECTED_TITLE_TEXT=Twój portfel jest już podłączony
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_ACCEPTED_CONTENT_TEXT=Hasło do Portfela zostało zmienione pomyślnie.
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_ACCEPTED_TITLE_TEXT=Hasło zmienione pomyślnie
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_REFUSED_CONTENT_TEXT=Hasło do portfela nie zostało zmienione, sprawdź hasło i kod PIN.
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_REFUSED_TITLE_TEXT=Hasło nie zostało zmienione
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_ACCEPTED_CONTENT_TEXT=Status PIN-u został zmieniony.
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_ACCEPTED_TITLE_TEXT=Status PIN-u został zmieniony
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_REFUSED_CONTENT_TEXT=Status PIN portfela nie został zmieniony, sprawdź hasło i kod PIN.
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_REFUSED_TITLE_TEXT=Status PIN-u nie został zmieniony
+WALLET_NETWORK_OBJECT_WARNING_WALLET_CONNECTION_CONTENT_TEXT=Ostrzeżenie, blockchain wykrył próbę połączenia z portfelem, jeśli to nie Ty, sugerujemy, abyś jak najszybciej zmienił hasło.
+WALLET_NETWORK_OBJECT_WARNING_WALLET_CONNECTION_TITLE_TEXT=Ostrzeżenie sieciowe
+WALLET_NETWORK_OBJECT_CANNOT_SEND_PACKET_TEXT=Nie można wysłać pakietu do sieci, Twój portfel został odłączony.
+############# END TRANSLATION NETWORK TEXT ################
