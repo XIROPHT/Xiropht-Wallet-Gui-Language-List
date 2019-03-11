@@ -7,6 +7,8 @@ The official list of language file used by Xiropht Wallet Gui
 
 - Français: Xiropht
 
+- German: Stone
+
 - Greek: AlpHA
 
 - Magyar: Maxy86
