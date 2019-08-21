@@ -1,0 +1,356 @@
+##############################################################
+#########>> CHARACTER HELP: << ###############################
+#########>> \n for make a new line << ########################
+#########>> %CoinMinName call the min name of the coin << ####
+#########>> %CoinName  the name of the coin << ###############
+#########>> %AmountSend amount coin to send << ###############
+#########>> %TargetWallet target wallet     << ###############
+#########>> %Date insert a date 			<< ###############
+##############################################################
+#
+# WARNING: LANGUAGE_NAME need to be at the first position. 
+LANGUAGE_NAME=Español
+CONTRIBUTOR=Alt Kim
+#
+######## START MAIN INTERFACE ########
+#
+## Menu File
+MENU_FILE_TEXT=Archivo
+MENU_FILE_MAIN_MENU_TEXT=Menú Principal
+MENU_FILE_CREATE_WALLET_MENU_TEXT=Crear billetera
+MENU_FILE_OPEN_WALLET_MENU_TEXT=Abrir billetera
+MENU_FILE_FUNCTION_CLOSE_WALLET_TEXT=Cerrar billetera
+MENU_FILE_RESTORE_WALLET_MENU_TEXT=Restaurar billetera
+MENU_FILE_FUNCTION_EXIT_TEXT=Salir
+#
+## Menu Language
+MENU_LANGUAGE_TEXT=Language
+#
+## Menu Setting
+MENU_SETTING_TEXT=Ajustes
+MENU_SETTING_SECURITY_TEXT=Seguridad
+#
+## SubMenu Security
+SUBMENU_SETTING_SECURITY_CONFIG_CHANGE_PASSWORD_TEXT=Cambiar contraseña del billetera
+SUBMENU_SETTING_SECURITY_CONFIG_PIN_CODE_TEXT=Establecer PIN CODE
+#
+## Menu Sync
+MENU_SETTING_SYNC_TEXT=Sincronizar
+#
+## SubMenu Sync
+SUBMENU_SETTING_SYNC_REMOTE_NODE_CONFIG_TEXT=Ajustes de Nodo Remoto
+SUBMENU_SETTING_RESYNC_TRANSACTION_TEXT=Resincronizar Transacciones
+SUBMENU_SETTING_RESYNC_BLOCK_TEXT=Resincronizar Bloques
+RESYNC_TRANSACTION_HISTORY_TITLE_TEXT=Resincronizar Historial de Transacciones
+RESYNC_TRANSACTION_HISTORY_CONTENT_TEXT=Realmente deseas resincronizar tu historial de transacciones?
+RESYNC_BLOCK_EXPLORER_TITLE_TEXT=Resincronizar el explorador de bloques
+RESYNC_BLOCK_EXPLORER_CONTENT_TEXT=Realmente deseas resincronizar el explorador de bloques?
+#
+## Menu Help
+SUBMENU_HELP_TEXT=Ayuda
+SUBMENU_HELP_ABOUT_TEXT=Acerca de
+#
+## Panel Wallet Information
+PANEL_WALLET_PENDING_BALANCE_TEXT=Monto pendiente por recibir:
+PANEL_WALLET_BALANCE_TEXT=Balance:
+PANEL_WALLET_ADDRESS_TEXT=Direccion de billetera:
+PANEL_WALLET_TOTAL_PENDING_TRANSACTION_ON_RECEIVE_TEXT=Transacciones pendientes por recibir:
+#
+## Button Wallet Menu
+BUTTON_WALLET_OVERVIEW_TEXT=Vision General
+BUTTON_WALLET_SEND_TRANSACTION_TEXT=Enviar %CoinMinName
+BUTTON_WALLET_TRANSACTION_HISTORY_TEXT=Historial de Transacciones
+BUTTON_WALLET_BLOCK_EXPLORER_TEXT=Explorador de Bloques
+BUTTON_WALLET_CONTACT_TEXT=Contacto(s)
+#
+######## END MAIN INTERFACE ########
+#
+#
+######## START BLOCK EXPLORER MENU ########
+#
+GRID_BLOCK_EXPLORER_COLUMN_ID_TEXT=ID
+GRID_BLOCK_EXPLORER_COLUMN_HASH_TEXT=Hash
+GRID_BLOCK_EXPLORER_COLUMN_REWARD_TEXT=Recompensa
+GRID_BLOCK_EXPLORER_COLUMN_DIFFICULTY_TEXT=Dificultad
+GRID_BLOCK_EXPLORER_COLUMN_DATE_CREATE_TEXT=Fecha de Creacion
+GRID_BLOCK_EXPLORER_COLUMN_DATE_FOUND_TEXT=Fecha de Confirmación
+GRID_BLOCK_EXPLORER_COLUMN_TRANSACTION_HASH_TEXT=Hash de transaccion
+#
+######## END BLOCK EXPLORER MENU ########
+#
+#
+######## START CREATE WALLET MENU ########
+#
+CREATE_WALLET_LABEL_TITLE_TEXT=Crear billetera:
+CREATE_WALLET_LABEL_PASSWORD_REQUIREMENT_TEXT= La contraseña debe contener al menos 8 caracteres de longitud y contener letras, números y caracteres especiales.
+CREATE_WALLET_LABEL_SELECT_WALLET_FILE_TEXT=Selecciona el directorio para guardar tu billetera:
+CREATE_WALLET_LABEL_INPUT_WALLET_PASSWORD_TEXT=Escribe una contraseña para el billetera:
+CREATE_WALLET_BUTTON_SUBMIT_CREATE_TEXT=Crear billetera
+CREATE_WALLET_ERROR_CANT_CONNECT_MESSAGE_CONTENT_TEXT=Error: No se puede conectar a la red para crear la billetera, por favor, intente más tarde.
+
+
+#
+######## END CREATE WALLET MENU ########
+#
+#
+######## START MAIN WALLET MENU ########
+#
+MAIN_WALLET_LABEL_WELCOME_INFORMATION_TEXT=Bienvenido a %CoinName Wallet\n Abrir billetera o crear uno para comenzar a enviar o recibir %CoinMinName:
+MAIN_WALLET_LABEL_HELP_INFORMATION_TEXT=Puedes cambiar el idioma de la billetera si es necesario. \n Para cualquier problema contacta al equipo en Disscord.
+MAIN_WALLET_BUTTON_OPEN_WALLET_MENU_TEXT=Abrir billetera
+MAIN_WALLET_BUTTON_CREATE_WALLET_MENU_TEXT=Crear billetera
+#
+######## END MAIN WALLET MENU ########
+#
+#
+######## START OPEN WALLET MENU ########
+#
+OPEN_WALLET_LABEL_TITLE_TEXT=Abrir billetera:
+OPEN_WALLET_LABEL_FILE_SELECTED_TEXT=Archivo de billetera seleccionado:
+OPEN_WALLET_LABEL_YOUR_PASSWORD_TEXT=Escribre la contraseña de la billetera:
+OPEN_WALLET_BUTTON_SEARCH_WALLET_FILE_TEXT=Buscar
+OPEN_WALLET_BUTTON_SUBMIT_WALLET_FILE_TEXT=OK
+OPEN_WALLET_ERROR_MESSAGE_NO_PASSWORD_WRITTED_TITLE_TEXT=Escribe la contraseña por favor
+OPEN_WALLET_ERROR_MESSAGE_NO_PASSWORD_WRITTED_CONTENT_TEXT=Debes introducir la contraseña de tu billetera
+OPEN_WALLET_ERROR_MESSAGE_WRONG_PASSWORD_WRITTED_TITLE_TEXT=No es posible abrir el archivo del billetera.
+OPEN_WALLET_ERROR_MESSAGE_WRONG_PASSWORD_WRITTED_CONTENT_TEXT= Porfavor asegurate que tu contraseña sea correcta. Después de eso si sigues presentando error, entonces probablemente olvidaste tu contraseña o el archivo probablemente está dañado, en cualquier caso, puedes usar tu clave privada para restaurarlo.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_TITLE_TEXT=Error de Red.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_CONTENT_TEXT=No se pude conectar a la red. por favor intenta más tarde.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_WRONG_PASSWORD_WRITTED_TITLE_TEXT=No se puede abrir el archivo de la billetera.
+OPEN_WALLET_ERROR_MESSAGE_NETWORK_WRONG_PASSWORD_WRITTED_CONTENT_TEXT=No se puede conectar a la red, tu contraseña actual no es el mismo que el del lado de la red, usa tu clave privada para restaurar propiamente tu billetera.
+
+#
+######## END OPEN WALLET MENU ########
+#
+#
+######## START OVERVIEW WALLET MENU ########
+OVERVIEW_WALLET_LABEL_TITLE_TEXT=Estadísticas de la Red
+OVERVIEW_WALLET_LABEL_COIN_MAX_SUPPLY_TEXT=Maxima emision de Monedas:
+OVERVIEW_WALLET_LABEL_COIN_CIRCULATING_TEXT=Monedas Circulando:
+OVERVIEW_WALLET_LABEL_TRANSACTION_FEE_ACCUMULATED_TEXT=Cuota acumulada por transaccion:
+OVERVIEW_WALLET_LABEL_TOTAL_COIN_MINED_TEXT=Total de Monedas Minadas:
+OVERVIEW_WALLET_LABEL_BLOCKCHAIN_HEIGHT_TEXT=Tamaño de la Blockchain :
+OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_MINED_TEXT=Total Bloques Minados:
+OVERVIEW_WALLET_LABEL_TOTAL_BLOCK_LEFT_TEXT=Total Bloques Restantes:
+OVERVIEW_WALLET_LABEL_NETWORK_DIFFICULTY_TEXT=Dificultad de la red:
+OVERVIEW_WALLET_LABEL_NETWORK_HASHRATE_TEXT=Hashrate de la red:
+OVERVIEW_WALLET_LABEL_LAST_BLOCK_FOUND_TEXT=Fecha del ultimo bloque encontrado:
+OVERVIEW_WALLET_LABEL_TOTAL_COIN_PENDING=Total de monedas pendientes:
+OVERVIEW_WALLET_BUTTON_TOOLTIP_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT= Este es el monto total de monedas acumuladas por cuota de transaccion. Este monto es usado para crear nuevos bloques una vez que el suministro máximo de monedas sea alcanzado. Este monto también es usado para pagar los nodos remotos públicos exitosamente listados en la red.
+OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_TITLE_TEXT=Informacion de cuotas acumuladas por transacción
+OVERVIEW_WALLET_BUTTON_MESSAGE_TRANSACTION_FEE_ACCUMULATED_CONTENT_TEXT=Este es el monto total de monedas acumuladas por cuota de transacción. Este monto es usado para crear nuevos bloques una vez que el suministro máximo de monedas sea alcanzado. Este monto también es usado para pagar los nodos remotos públicos exitosamente listados en la red.
+#
+######## END OVERVIEW WALLET MENU ########
+#
+#
+######## START SEND TRANSACTION WALLET MENU ########
+SEND_TRANSACTION_WALLET_LABEL_TITLE_TEXT=Enviar %CoinMinName:
+SEND_TRANSACTION_WALLET_LABEL_WALLET_ADDRESS_TARGET_TEXT=Direccion de billetera de Rececpcion:
+SEND_TRANSACTION_WALLET_LABEL_AMOUNT_TEXT=Monto a ser enviado:
+SEND_TRANSACTION_WALLET_LABEL_FEE_TEXT=Comisiones:
+SEND_TRANSACTION_WALLET_LABEL_ESTIMATED_RECEIVE_TIME_TEXT=Tiempo Estimado de transaccion:
+SEND_TRANSACTION_WALLET_CHECKBOX_OPTION_ANONYMITY_TEXT=Esconder tu direccion de billetera (Lo hace invisible al receptor).
+SEND_TRANSACTION_WALLET_BUTTON_SUBMIT_TRANSACTION_TEXT=ENVIAR
+SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_TITLE_TEXT=Confirmar opcion Anonimo
+SEND_TRANSACTION_WALLET_MESSAGE_OPTION_ANONYMITY_CONTENT1_TEXT=Una vez que envíe su %CoinMinName, la cadena de bloques aumentará las tarifas en 0.00001 %CoinMinName, ¿realmente quiere usar esta opción? [esta tarifa adicional se le dará al Equipo de Desarrolladores / Probadores]
+SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_TITLE_TEXT=Información de tarifas de transacción
+SEND_TRANSACTION_WALLET_MESSAGE_FEE_INFORMATION_CONTENT_TEXT=La tarifa mínima es 0.00001000 %CoinMinName
+SEND_TRANSACTION_WALLET_TOOLTIP_FEE_INFORMATION_CONTENT_TEXT=La tarifa mínima es 0.00001000 %CoinMinName
+SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_TITLE_TEXT=Tiempo estimado para el procesamiento de la transacción.
+SEND_TRANSACTION_WALLET_MESSAGE_TIME_RECEIVE_INFORMATION_CONTENT_TEXT=El tiempo de procesamiento de la transacción se estima calculando el número total de transacciones pendientes en la red. Recuerde, si el destinatario tiene varias transacciones pendientes por recibir, eso también aumentará el tiempo necesario para recibir su %CoinMinName (1 segundo por transacción pendiente).
+SEND_TRANSACTION_WALLET_MESSAGE_SUBMIT_TITLE_TEXT=Confirmar envoi %CoinMinName
+SEND_TRANSACTION_WALLET_MESSAGE_SUBMIT_CONTENT_TEXT=¿Realmente desea enviar una cantidad de: %AmountSend %CoinMinName a la dirección: %TargetWallet?
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_FEE_CONTENT_TEXT=Error en el monto de la tarifa ingresada.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_AMOUNT_CONTENT_TEXT=Error en el monto de la tarifa ingresada.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_TARGET_CONTENT_TEXT=Error en la dirección de la billetera del destinatario.
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_CONNECTION_TITLE_TEXT=Error de Conexión
+SEND_TRANSACTION_WALLET_MESSAGE_ERROR_CONNECTION_CONTENT_TEXT=Error de conexión, no se puede enviar su solicitud de transacción a la red
+
+SEND_TRANSACTION_WALLET_TIME_SECOND_TEXT=segundo(s).
+SEND_TRANSACTION_WALLET_TIME_MINUTE_TEXT=minuto(s).
+SEND_TRANSACTION_WALLET_TIME_HOUR_TEXT=hora(s).
+SEND_TRANSACTION_WALLET_TIME_DAY_TEXT=dia(s).
+######## END SEND TRANSACTION WALLET MENU ########
+#
+#
+######## START TRANSACTION HISTORY WALLET MENU ########
+TRANSACTION_HISTORY_WALLET_COLUMN_ID=ID
+TRANSACTION_HISTORY_WALLET_COLUMN_DATE=Fecha
+TRANSACTION_HISTORY_WALLET_COLUMN_TYPE=Tipo
+TRANSACTION_HISTORY_WALLET_COLUMN_HASH=Hash
+TRANSACTION_HISTORY_WALLET_COLUMN_AMOUNT=Monto
+TRANSACTION_HISTORY_WALLET_COLUMN_FEE=Cuotas
+TRANSACTION_HISTORY_WALLET_COLUMN_ADDRESS=Dirección
+TRANSACTION_HISTORY_WALLET_COLUMN_DATE_RECEIVED=Fecha de Envio/Recepción
+TRANSACTION_HISTORY_WALLET_COLUMN_BLOCK_HEIGHT_SRC=Altura del bloque de origen
+TRANSACTION_HISTORY_WALLET_WAITING_MESSAGE_SYNC_TEXT=Espere un momento, el historial de transacciones se está sincronizando.
+TRANSACTION_HISTORY_WALLET_COPY_TEXT=Copiado.
+TRANSACTION_HISTORY_WALLET_TAB_NORMAL_SEND_TRANSACTION_LIST_TEXT=Transacciones enviadas
+TRANSACTION_HISTORY_WALLET_TAB_ANONYMOUS_SEND_TRANSACTION_LIST_TEXT=Transacciones enviadas anónimamente
+TRANSACTION_HISTORY_WALLET_TAB_NORMAL_RECEIVED_TRANSACTION_LIST_TEXT=Transacciones Recibidas
+TRANSACTION_HISTORY_WALLET_TAB_ANONYMOUS_RECEIVE_TRANSACTION_LIST_TEXT=Transacciones Recibidas Anónimamente
+TRANSACTION_HISTORY_WALLET_TAB_BLOCK_REWARD_RECEIVED_LIST_TEXT=Recompensa por Bloque
+######## END TRANSACTION HISTORY WALLET MENU ########
+#
+#
+######## START RESTORE WALLET MENU ########
+#
+#
+RESTORE_WALLET_LABEL_TITLE_TEXT=Restaurar billetera:
+RESTORE_WALLET_LABEL_SELECT_PATH_FILE_TEXT=Seleccione el directorio donde se guardará su billetera:
+RESTORE_WALLET_LABEL_PRIVATE_KEY_TEXT=Escriba su clave privada:
+RESTORE_WALLET_LABEL_PASSWORD_TEXT=Escriba una nueva contraseña para su billetera:
+RESTORE_WALLET_BUTTON_SUBMIT_RESTORE_TEXT=Restaurar
+######## END RESTORE WALLET MENU #########
+#
+#
+######## START CHANGE PASSWORD WALLET MENU ########
+CHANGE_PASSWORD_WALLET_LABEL_OLD_PASSWORD_TEXT=Escriba su contraseña actual:
+CHANGE_PASSWORD_WALLET_LABEL_PIN_CODE_TEXT=Escriba su codigo PIN:
+CHANGE_PASSWORD_WALLET_LABEL_NEW_PASSWORD_TEXT=Escriba su nueva contraseña:
+######## END CHANGE PASSWORD WALLET MENU ########
+#
+#
+######## START CREATE WALLET SUBMENU ########
+CREATE_WALLET_SUBMENU_LABEL_INFORMATION_TEXT=Su billetera se ha creado con éxito, conserve su clave privada y su código PIN en un lugar seguro \n En caso de que pierda el archivo de su billetera. Si pierde su clave privada, no puede recuperar el archivo de su billetera en caso de pérdida. \n Si pierde su clave pública, no puede usar la dirección y contraseña de su billetera para recuperar información de datos de su billetera. Si pierde su código PIN, no puede acceder a su billetera. \n No nos hacemos responsables en caso de que los pierda, usted es totalmente responsable.
+CREATE_WALLET_SUBMENU_LABEL_PUBLIC_KEY_TEXT=Su billetera pública Key:
+CREATE_WALLET_SUBMENU_LABEL_PRIVATE_KEY_TEXT=Su clave de billetera privada:
+CREATE_WALLET_SUBMENU_LABEL_PIN_CODE_TEXT=Su codigo PIN:
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_TEXT=Copiar informacion de billetera
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_TEXT=Ya aseguré la información de mi billetera antes de continuar.
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_TITLE_TEXT=Estas Seguro?
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_CONTENT_TEXT=Asegúrese de haber guardado la información de su billetera. NO PUEDE recuperarse una vez que cierre esta ventana.
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_TITLE_TEXT=Información de billetera copiada
+CREATE_WALLET_SUBMENU_BUTTON_COPY_WALLET_INFORMATION_CONTENT_TEXT=La información de su billetera ha sido copiada, no olvide guardar esta información en un lugar seguro.
+CREATE_WALLET_SUBMENU_BUTTON_ACCEPT_WALLET_INFORMATION_MESSAGE_SAFE_CONTENT_TEXT=Esté seguro, proteja la información de su billetera por si acaso.
+######## END CREATE WALLET SUBMENU ########
+#
+#
+######## START PIN CODE SETTING STATUS MENU ########
+PIN_CODE_SETTING_MENU_LABEL_STATUS_INFORMATION_TEXT=Estado de codigo PIN: 
+PIN_CODE_SETTING_MENU_LABEL_STATUS_ENABLED_TEXT=Habilitado
+PIN_CODE_SETTING_MENU_BUTTON_STATUS_ENABLE_TEXT=Habilitado
+PIN_CODE_SETTING_MENU_LABEL_STATUS_DISABLED_TEXT=Inhabilitar
+PIN_CODE_SETTING_MENU_BUTTON_STATUS_DISABLE_TEXT=Inabilitar
+PIN_CODE_SETTING_MENU_LABEL_INFORMATION_TEXT=Recuerda, esta configuración es solo para esta billetera, la configuración de cada billetera es independiente.
+PIN_CODE_SETTING_MENU_LABEL_WRITE_PASSWORD_TEXT=Escribe tu contraseña:
+PIN_CODE_SETTING_MENU_LABEL_WRITE_PIN_CODE_TEXT=Escribe tu código PIN:
+PIN_CODE_SETTING_MENU_BUTTON_SUBMIT_CHANGE_TEXT=Enviar
+######## END PIN CODE SETTING STATUS MENU ########
+#
+#
+######## START PIN CODE SUBMIT MENU ########
+PIN_CODE_SUBMIT_MENU_LABEL_INFORMATION_TEXT=La cadena de bloques le solicita su código PIN. \n Por favor, escríbalo para continuar usando su billetera:
+PIN_CODE_SUBMIT_MENU_WARNING_TEXT=Por favor escriba su código PIN.
+PIN_CODE_SUBMIT_MENU_NETWORK_ERROR_TEXT=No se puede enviar su código PIN, la billetera se ha desconectado.
+######## END PIN CODE SUBMIT MENU ########
+#
+#
+######## START REMOTE NODE SETTING MENU ########
+REMOTE_NODE_SETTING_MENU_USE_SEED_NODE_NETWORK_ONLY_TEXT=Use solo el nodo semilla para sincronizar su billetera [Recomendado].
+REMOTE_NODE_SETTING_MENU_USE_REMOTE_NODE_TEXT=Use la lista pública de nodos remotos para sincronizar su billetera.
+REMOTE_NODE_SETTING_MENU_USE_REMOTE_NODE_INFORMATION_TEXT=El nodo semilla proporciona la lista de nodos remotos públicos. \n Si no hay nodos remotos públicos disponibles, el modo de nodo semilla se elegirá automáticamente.
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_TEXT=Sincronización manual mediante el uso de un host de nodo remoto [No Recomendado].
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_INFORMATION_TEXT=Si elige usar esta opción, le recomendamos que use su nodo remoto privado SOLAMENTE.
+REMOTE_NODE_SETTING_MENU_USE_MANUAL_NODE_HOSTNAME_TEXT=Nombre del Host / IP:
+REMOTE_NODE_SETTING_MENU_SAVE_SETTING_TEXT=Su configuración de sincronización se ha guardado. Por favor, vuelva a abrir su billetera.
+######## END REMOTE NODE SETTING MENU ########
+#
+#
+####### START WAITING MENU #######
+WAITING_MENU_LABEL_TEXT=Por favor espere un momento.
+######## END WAITING MENU ########
+#
+#
+####### START NETWORK WAITING MENU #######
+NETWORK_WAITING_MENU_LABEL_TEXT=Se ha perdido la conexión, intentando volver a conectar su billetera.
+######## END NETWORK WAITING MENU ########
+#
+#
+####### START WAITING CREATE WALLET MENU #######
+WAITING_CREATE_WALLET_MENU_LABEL_TEXT=La creación de su billetera está pendiente. \n Espere un momento.
+######## END NETWORK WAITING MENU ########
+#
+#
+####### START CONTACT MENU ########
+CONTACT_BUTTON_ADD_CONTACT_TEXT=Nuevo Contacto
+CONTACT_LIST_COLUMN_NAME_TEXT=Nombre
+CONTACT_LIST_COLUMN_ADDRESS_TEXT=Direccion de Billetera
+CONTACT_LIST_COLUMN_ACTION_TEXT=Acción
+CONTACT_LIST_BUTTON_REMOVE_TEXT=Remover
+CONTACT_LIST_COPY_ACTION_CONTENT_TEXT=Información de contacto copiada
+CONTACT_LIST_REMOVE_ACTION_CONTENT_TEXT=Realmente desea remover este contacto?
+####### END CONTACT MENU #######
+#
+#
+####### START CONTACT SUBMENU ########
+CONTACT_SUBMENU_LABEL_CONTACT_NAME_TEXT=Nombre de contacto:
+CONTACT_SUBMENU_LABEL_CONTACT_WALLET_ADDRESS_TEXT=Dirección de billetera de contacto:
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_TITLE_TEXT=Nombre de contacto vacío
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_NAME_CONTENT_TEXT=El nombre del contacto está vacío, Por favor inserte un nombre de contacto.
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_TITLE_TEXT=Nombre de contacto Invalido
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_NAME_CONTENT_TEXT=El nombre del contacto no es válido, verifique los caracteres del nombre del contacto.
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Dirección de billetera de contacto vacía
+CONTACT_SUBMENU_ERROR_EMPTY_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=La dirección de la billetera de contacto está vacía, inserte una dirección de billetera de contacto.
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_TITLE_TEXT=Dirección de billetera de contacto no válida
+CONTACT_SUBMENU_ERROR_INVALID_CONTACT_WALLET_ADDRESS_CONTENT_TEXT=La dirección de la billetera del contacto no es válida, verifique los caracteres de la dirección de la billetera del contacto.
+CONTACT_SUBMENU_ERROR_INSERT_CONTACT_TITLE_TEXT=Error al guardar el contacto
+CONTACT_SUBMENU_ERROR_INSERT_CONTACT_CONTENT_TEXT=No se puede guardar su nuevo contacto, parece que el contacto ya existe.
+CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_TITLE_TEXT=Guardado exitoso
+CONTACT_SUBMENU_SUCCESS_INSERT_CONTACT_CONTENT_TEXT=Su nuevo contacto ha sido guardado exitosamente.
+####### END CONTACT MENU #######
+#
+#
+####### START FIRST START MENU ########
+FIRST_START_MENU_LABEL_WELCOME=Bienvenido a la billetera %CoinName, parece que esta es su primera ejecución, \n seleccione su idioma:
+####### END CONTACT MENU #######
+#
+#
+#################### END GRAPHIC PART #######################
+############# START TRANSLATION NETWORK TEXT ################
+WALLET_NETWORK_OBJECT_TRANSACTION_CACHE_ERROR_TEXT=No se puede leer el caché de transacciones de su billetera, la billetera volverá a sincronizar su historial de transacciones.
+WALLET_NETWORK_OBJECT_ANONYMITY_TRANSACTION_CACHE_ERROR_TEXT=No se puede leer el caché de transacciones anónimas de su billetera, la billetera volverá a sincronizar su historial de transacciones anónimas.
+WALLET_NETWORK_OBJECT_BLOCK_CACHE_READ_SUCCESS_TEXT=El caché de bloque de billetera se ha cargado correctamente
+WALLET_NETWORK_OBJECT_DISCONNECTED_TEXT=No conectado.
+WALLET_NETWORK_OBJECT_CANNOT_CONNECT_WALLET_CONTENT_TEXT=No se puede reconectar su billetera a la red, porfavor revise su conexión a internet.
+WALLET_NETWORK_OBJECT_CANNOT_CONNECT_WALLET_TITLE_TEXT=Error de Red
+WALLET_NETWORK_OBJECT_SUCCESS_CONNECT_WALLET_CONTENT_TEXT=Su billetera ha sido conectada a la red satisfactoriamente.
+WALLET_NETWORK_OBJECT_SUCCESS_CONNECT_WALLET_TITLE_TEXT=Conexión satisfactoria
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR1_CONTENT_TEXT=La contraseña de la billetera debe contener más caracteres (mínimo: 8).
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR1_TITLE_TEXT=La contraseña no contiene suficientes caracteres.
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR2_CONTENT_TEXT=La contraseña de la billetera debe contener letras, números y caracteres especiales...
+WALLET_NETWORK_OBJECT_CREATE_WALLET_PASSWORD_ERROR2_TITLE_TEXT=La contraseña no es lo suficientemente fuerte.
+WALLET_NETWORK_OBJECT_PIN_CODE_ACCEPTED_CONTENT_TEXT=Código PIN aceptado, blockchain le pedirá su código PIN una vez cada 15 minutos.
+WALLET_NETWORK_OBJECT_PIN_CODE_ACCEPTED_TITLE_TEXT=Codigo PIN aceptado
+WALLET_NETWORK_OBJECT_PIN_CODE_REFUSED_CONTENT_TEXT=Código PIN incorrecto, por favor intente nuevamente. Después de 5 intentos fallidos, la billetera estará bloqueada durante 1 hora.
+WALLET_NETWORK_OBJECT_PIN_CODE_REFUSED_TITLE_TEXT=Codigo PIN incorrecto
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_INVALID_AMOUNT_CONTENT_TEXT=Transacción rechazada. Ha ingresado una cantidad no válida.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_INVALID_AMOUNT_TITLE_TEXT=Transacción rechazada
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_AMOUNT_CONTENT_TEXT=Transacción rechazada. El monto de entrada es insuficiente
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_AMOUNT_TITLE_TEXT=Transacción rechazada
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_FEE_CONTENT_TEXT=Transacción rechazada. La entrada de comisión es insuficiente.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_NOT_ENOUGHT_FEE_TITLE_TEXT=Transacción rechazada
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_CONTENT_TEXT=Ocupado enviando una transacción, la cadena de bloques actualmente está verificando el estado de su saldo, espere un momento para enviar otra transacción o intente volver a conectarse si este estado persiste.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_TITLE_TEXT=Comprobación del estado del saldo
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_RECEIVE_CONTENT_TEXT=Ocupado recibiendo una transacción, espere antes de enviar una transacción hasta: %Date
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_BUSY_RECEIVE_TITLE_TEXT=Ocupado con una transacción
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ACCEPTED_CONTENT_TEXT=La transacción se ha aceptado en el lado de blockchain, su historial se actualizará lo antes posible por un nodo remoto público o manualmente desde el nodo seleccionado en la configuración manual del nodo.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ACCEPTED_TITLE_TEXT=Transacción Aceptada
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ADDRESS_NOT_VALID_CONTENT_TEXT=Dirección de Billetera invalida, por favor corrigala.
+WALLET_NETWORK_OBJECT_SEND_TRANSACTION_ADDRESS_NOT_VALID_TITLE_TEXT=Dirección de Billetera invalida
+WALLET_NETWORK_OBJECT_BANNED_CONTENT_TEXT=Su billetera ha sido bloqueada durante aproximadamente una hora, intente volver a conectarse más tarde.
+WALLET_NETWORK_OBJECT_BANNED_TITLE_TEXT=Billetera bloqueada
+WALLET_NETWORK_OBJECT_ALREADY_CONNECTED_CONTENT_TEXT=Su billetera ya se ha conectado, intente volver a conectarla más tarde.
+WALLET_NETWORK_OBJECT_ALREADY_CONNECTED_TITLE_TEXT=Billetera ya conectada
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_ACCEPTED_CONTENT_TEXT=La contraseña de la billetera se ha modificado satisfactoriamente.
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_ACCEPTED_TITLE_TEXT=Contraseña modificada satisfactoriamente
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_REFUSED_CONTENT_TEXT=Contraseña de la billetera no ha cambiado, por favor revise su contraseña y su código PIN.
+WALLET_NETWORK_OBJECT_CHANGE_PASSWORD_REFUSED_TITLE_TEXT=Contraseña no modificada
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_ACCEPTED_CONTENT_TEXT=El estado del PIN de la billetera se ha modificado correctamente.
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_ACCEPTED_TITLE_TEXT=Estado del PIN modificado
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_REFUSED_CONTENT_TEXT=El estado del PIN de la billetera no ha cambiado, verifique la contraseña y el código PIN.
+WALLET_NETWORK_OBJECT_CHANGE_PIN_CODE_STATUS_REFUSED_TITLE_TEXT=Estado del PIN no se a modificado
+WALLET_NETWORK_OBJECT_WARNING_WALLET_CONNECTION_CONTENT_TEXT=Advertencia, la cadena de bloques ha detectado un intento de conectarse a la billetera, si no es usted, le sugerimos que cambie su contraseña lo antes posible.
+WALLET_NETWORK_OBJECT_WARNING_WALLET_CONNECTION_TITLE_TEXT=Advertencia de red
+WALLET_NETWORK_OBJECT_CANNOT_SEND_PACKET_TEXT=No se puede enviar el paquete a la red, su billetera se ha desconectado.
+############# END TRANSLATION NETWORK TEXT ################
